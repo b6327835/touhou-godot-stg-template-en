@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dlrgh5rcaxcqf" path="res://DanmakuRelated/SpellCard/方阵：完美立方体.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://d1bmakohvgygy" path="res://DanmakuRelated/SpellCard/方符：摇曳方阵.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://doosbpn52hup8" path="res://DanmakuRelated/SpellCard/范例：波与粒的境界.tscn" id="7"]
-[ext_resource type="PackedScene" uid="uid://o2n0y8txkeca" path="res://Items/道具管理器.tscn" id="9_6w5xb"]
+[ext_resource type="PackedScene" uid="uid://o2n0y8txkeca" path="res://Items/ItemManager.tscn" id="9_6w5xb"]
 
 [sub_resource type="CanvasItemMaterial" id="1"]
 blend_mode = 1

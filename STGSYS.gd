@@ -114,7 +114,7 @@ func simple_add_drop(_name,pos):
 	#将掉落物品随机添加在坐标的50x50范围内
 	var vec = Vector2(randf_range(pos.x-25,pos.x+25),\
 			randf_range(pos.y-25,pos.y+25))
-	current_level.get_node("道具管理器").\
+	current_level.get_node("ItemManager").\
 	create_new_item(_name,pos)
 
 func change_value(type,val):

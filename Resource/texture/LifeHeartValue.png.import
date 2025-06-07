@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wnltn64cscho"
-path="res://.godot/imported/生命心值.png-a011fa8fd7587a26b647ae4914cc2499.ctex"
+path="res://.godot/imported/LifeHeartValue.png-be20839980ab19da0445d0434f3c3ab8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resource/texture/生命心值.png"
-dest_files=["res://.godot/imported/生命心值.png-a011fa8fd7587a26b647ae4914cc2499.ctex"]
+source_file="res://Resource/texture/LifeHeartValue.png"
+dest_files=["res://.godot/imported/LifeHeartValue.png-be20839980ab19da0445d0434f3c3ab8.ctex"]
 
 [params]
 
