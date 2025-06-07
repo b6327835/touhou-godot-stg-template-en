@@ -1,0 +1,250 @@
+# Translation Reference File
+# Format: originalText = englishText
+
+# File Names
+# ----------
+东方弹幕绘.tscn = TouhouDanmakuDrawing.tscn
+炸弹 = Bomb
+掉落物 = Items
+弹幕相关 = DanmakuRelated
+关卡 = Stages
+一些基础的规划原则 = BasicPlanningPrinciples
+字体 = Fonts
+机体 = Player
+更新档函数表.txt = UpdateFunctionTable.txt
+更新档生成器.py = UpdateGenerator.py
+默认炸弹发弹点.tscn = DefaultBombSpawnPoint.tscn
+默认炸弹.tscn = DefaultBomb.tscn
+默认炸弹发弹点.gd = DefaultBombSpawnPoint.gd
+默认炸弹.gd = DefaultBomb.gd
+道具管理器.tscn = ItemManager.tscn
+道具管理器.gd = ItemManager.gd
+GameWindow配色.tres = GameWindowColorScheme.tres
+
+# Tree Structure
+# -------------
+@/Root Files
+- .gitignore
+- LICENSE
+- README.md
+- default_env.tres
+- GameOverWindow.gd
+- GameOverWindow.gd.uid
+- GameWindow.gd
+- GameWindow.gd.uid
+- GameWindow配色.tres (GameWindowColorScheme.tres)
+- MainMenu.gd
+- MainMenu.gd.uid
+- NumberPanel.gd
+- NumberPanel.gd.uid
+- RSLOADER.gd
+- RSLOADER.gd.uid
+- STGSYS.gd
+- STGSYS.gd.uid
+- Util.gd
+- Util.gd.uid
+- difficult_panel.gd
+- difficult_panel.gd.uid
+- icon.png
+- icon.png.import
+- main.gd
+- main.gd.uid
+- project.godot
+- 东方弹幕绘.tscn (TouhouDanmakuDrawing.tscn)
+- 更新档函数表.txt (UpdateFunctionTable.txt)
+- 更新档生成器.py (UpdateGenerator.py)
+
+@/Audio
+- SE/
+  - back_003.wav
+  - select_003.wav
+  - toggle_003.wav
+
+@/Resource
+- texture/
+  - P_Point.png
+  - P_Point.png.import
+  - Point.png
+  - Point.png.import
+  - 生命心值.png (LifeHeartValue.png)
+  - 生命心值.png.import (LifeHeartValue.png.import)
+  - 符卡值.png (SpellCardValue.png)
+  - 符卡值.png.import (SpellCardValue.png.import)
+
+@/UI
+- BossHPNormal.aseprite
+- BossHPSpell.aseprite
+- BossHpNormal.png
+- BossHpNormal.png.import
+- BossHpSpell.png
+- BossHpSpell.png.import
+- HpBar.tscn
+- HpBarRed.tscn
+- UI.gd
+- UI.gd.uid
+- UI.tscn
+- difficult_panel.gdshader
+- difficult_panel.gdshader.uid
+- difficult_panel.tres
+- difficult_panel_font.gdshader
+- difficult_panel_font.gdshader.uid
+- spell_name_container.tres
+
+@/一些基础的规划原则 (BasicPlanningPrinciples)
+- STG游戏显示顺序.jpg (STGDisplayOrder.jpg)
+
+@/关卡 (Stages)
+- 默认测试关卡.tscn (DefaultTestStage.tscn)
+- 默认关卡脚本.gd (DefaultStageScript.gd)
+- 默认关卡脚本.gd.uid (DefaultStageScript.gd.uid)
+- 符卡测试关卡.tscn (SpellCardTestStage.tscn)
+- 关卡模板.tscn (StageTemplate.tscn)
+
+@/字体 (Fonts)
+- VonwaonBitmap-12px.ttf
+- VonwaonBitmap-16px.ttf
+- WenQuanDianZhenZhengHei-1.ttf
+- number.tres
+- 分数标题.tres (ScoreTitle.tres)
+- 标题.tres (Title.tres)
+- 进度条文本.tres (ProgressBarText.tres)
+
+@/机体 (Player)
+- Boss/
+  - Boss_01 (复制 1).png (Boss_01_Copy1.png)
+  - Boss_01.png
+  - Boss_01.tscn
+  - BossFlyer.gd
+  - BossFlyer.gd.uid
+  - DemoBossSquare/
+	- Boss_Squre.gd 
+	- Boss_Squre.gd.uid 
+	- Demo_BossSquare.tscn 
+	- SqureBossOneFei.gd 
+	- SqureBossOneFei.gd.uid 
+	- SqureBossOneFei.tscn 
+- 敌机/ (Enemy/)
+  - EnemyFlyerFollowPath.gd
+  - EnemyFlyerFollowPath.gd.uid
+  - EnemyFlyerFollowPath.tscn
+  - Squre_BOSS_EnemyFlyer.tscn (SquareBossEnemyFlyer.tscn)
+  - 默认敌机.gd (DefaultEnemy.gd)
+  - 默认敌机.gd.uid (DefaultEnemy.gd.uid)
+  - 默认敌机.tscn (DefaultEnemy.tscn)
+- 自机/ (PlayerCharacter/)
+  - GrazeArea.gd
+  - GrazeArea.gd.uid
+  - 默认自机.gd (DefaultPlayer.gd)
+  - 默认自机.gd.uid (DefaultPlayer.gd.uid)
+  - 默认自机.tscn (DefaultPlayer.tscn)
+  - 自机判定点.gd (PlayerHitbox.gd)
+  - 自机判定点.gd.uid (PlayerHitbox.gd.uid)
+
+@/掉落物 (Items)
+- BiggerPower.gd
+- BiggerPower.gd.uid
+- MegaPower.gd
+- MegaPower.gd.uid
+- Point.gd
+- Point.gd.uid
+- Power.gd
+- Power.gd.uid
+- 道具管理器.gd (ItemManager.gd)
+- 道具管理器.gd.uid (ItemManager.gd.uid)
+- 道具管理器.tscn (ItemManager.tscn)
+
+@/炸弹 (Bomb)
+- 默认炸弹.gd (DefaultBomb.gd)
+- 默认炸弹.gd.uid (DefaultBomb.gd.uid)
+- 默认炸弹.tscn (DefaultBomb.tscn)
+- 默认炸弹发弹点.gd (DefaultBombSpawnPoint.gd)
+- 默认炸弹发弹点.gd.uid (DefaultBombSpawnPoint.gd.uid)
+- 默认炸弹发弹点.tscn (DefaultBombSpawnPoint.tscn)
+
+@/弹幕相关 (DanmakuRelated)
+- 子弹.gd (Bullet.gd)
+- 子弹.gd.uid (Bullet.gd.uid)
+- 子弹样式组.tres (BulletStyleGroup.tres)
+- 子弹池（未使用）.gd (BulletPool_Unused.gd)
+- 子弹池（未使用）.gd.uid (BulletPool_Unused.gd.uid)
+- 发弹点.gd (BulletSpawnPoint.gd)
+- 发弹点.gd.uid (BulletSpawnPoint.gd.uid)
+- 发弹点.tscn (BulletSpawnPoint.tscn)
+- 发弹点配置.gd (BulletSpawnPointConfig.gd)
+- 发弹点配置.gd.uid (BulletSpawnPointConfig.gd.uid)
+- 判定线.png (HitboxLine.png)
+- 判定线.png.import (HitboxLine.png.import)
+- 弹幕管理器.gd (DanmakuManager.gd)
+- 弹幕管理器.gd.uid (DanmakuManager.gd.uid)
+- 弹幕管理器.tscn (DanmakuManager.tscn)
+- 编辑子弹辅助.tscn (BulletEditHelper.tscn)
+- 激光的表现.png (LaserEffect.png)
+- 激光的表现.png.import (LaserEffect.png.import)
+- meteor.gd
+- meteor.gd.uid
+- meteor.tscn
+- touhou_pixel_bullets.png
+- touhou_pixel_bullets.png.import
+- 子弹碰撞/ (BulletCollision/)
+  - 书弹.tres (BookBullet.tres)
+  - 判定线.tres (HitboxLine.tres)
+  - 小玉.tres (SmallOrb.tres)
+  - 中玉.tres (MediumOrb.tres)
+  - 方玉.tres (SquareOrb.tres)
+  - 星弹.tres (StarBullet.tres)
+  - 棱弹.tres (PrismBullet.tres)
+  - 米玉.tres (RiceOrb.tres)
+  - 激光.tres (Laser.tres)
+  - 扳手弹.tres (WrenchBullet.tres)
+  - 雏翼弹.tres (WingBullet.tres)
+- 发弹点/ (BulletSpawnPoint/)
+  - 圆周发弹点.gd (CircularSpawnPoint.gd)
+  - 圆周发弹点.tscn (CircularSpawnPoint.tscn)
+  - 发弹点发射器.gd (SpawnPointEmitter.gd)
+  - 发弹点发射器.tscn (SpawnPointEmitter.tscn)
+  - 敌机发射器.gd (EnemyEmitter.gd)
+  - 敌机发射器.tscn (EnemyEmitter.tscn)
+  - 激光发弹点.gd (LaserSpawnPoint.gd)
+  - 激光发弹点.tscn (LaserSpawnPoint.tscn)
+  - 炸弹发弹点.gd (BombSpawnPoint.gd)
+  - 炸弹发弹点.tscn (BombSpawnPoint.tscn)
+  - 自机发弹点.gd (PlayerSpawnPoint.gd)
+  - 自机发弹点.tscn (PlayerSpawnPoint.tscn)
+  - 自机狙发弹点.gd (PlayerAimSpawnPoint.gd)
+  - 自机狙发弹点.tscn (PlayerAimSpawnPoint.tscn)
+- 反射板/ (Reflector/)
+  - 基础反射板.gd (BasicReflector.gd)
+  - 基础反射板.gd.uid (BasicReflector.gd.uid)
+  - 基础反射板.tscn (BasicReflector.tscn)
+- 符卡/ (SpellCard/)
+  - card_res.gd (CardResource.gd)
+  - card_res.gd.uid (CardResource.gd.uid)
+  - 基础符卡.gd (BasicSpellCard.gd)
+  - 基础符卡.gd.uid (BasicSpellCard.gd.uid)
+  - 基础符卡.tscn (BasicSpellCard.tscn)
+  - 方块一非.tscn (SquareOneNon.tscn)
+  - 方块二非.tscn (SquareTwoNon.tscn)
+  - 方符：摇曳方阵.tscn (Square:WavingFormation.tscn)
+  - 方阵：完美立方体.tscn (Formation:PerfectCube.tscn)
+  - 棱符：天棱地方.tscn (Prism:HeavenEarthPrism.tscn)
+  - 神奇弹幕收集.tscn (MagicalBulletCollection.tscn)
+  - 范例：波与粒的境界.tscn (Example:WaveParticleBoundary.tscn)
+  - 发弹点组/ (SpawnPointGroup/)
+	- 相对发弹点--玩家.gd (RelativeSpawnPoint_Player.gd)
+	- 相对发弹点组.gd (RelativeSpawnPointGroup.gd)
+  - 符卡发弹点/ (SpellCardSpawnPoint/)
+	- 方符：摇曳方阵.gd (Square:WavingFormation.gd)
+	- 方符：摇曳方阵.tscn (Square:WavingFormation.tscn)
+	- 方阵：完美立方体.tscn (Formation:PerfectCube.tscn)
+	- 星符：飞星在天.gd (Star:StarsInSky.gd)
+	- 星符：飞星在天.tscn (Star:StarsInSky.tscn)
+	- 范例：波与粒的境界.gd (Example:WaveParticleBoundary.gd)
+	- 范例：波与粒的境界.tscn (Example:WaveParticleBoundary.tscn)
+  - 角色符卡/ (CharacterSpellCards/)
+	- 小风/ (LittleWind/)
+	- 小雨/ (LittleRain/)
+	- 星辉之城卫兵/ (StarlightCityGuard/)
+- 遮罩/ (Mask/)
+  - 基础遮罩.gd (BasicMask.gd)
+  - 基础遮罩.gd.uid (BasicMask.gd.uid)
+  - 基础遮罩.tscn (BasicMask.tscn) 

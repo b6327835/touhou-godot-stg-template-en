@@ -3,20 +3,20 @@ extends Node
 signal load_finish
 
 var bullet_sprite_frames = [
-	preload("res://弹幕相关/子弹样式组.tres")
+	preload("res://DanmakuRelated/子弹样式组.tres")
 ]
 
 var bullet_spawner = {
-#	"BulletSpawner": load("res://弹幕相关/发弹点.tscn"),
+#	"BulletSpawner": load("res://DanmakuRelated/发弹点.tscn"),
 }
 
 var bullet_collision_shapes = {
-	"中玉":preload("res://弹幕相关/子弹碰撞/中玉.tres"),
-	"小玉":preload("res://弹幕相关/子弹碰撞/小玉.tres"),
-	"方玉":preload("res://弹幕相关/子弹碰撞/方玉.tres"),
-	"米玉":preload("res://弹幕相关/子弹碰撞/米玉.tres"),
-	"棱弹":preload("res://弹幕相关/子弹碰撞/棱弹.tres"),
-	"激光":preload("res://弹幕相关/子弹碰撞/激光.tres"),
+	"中玉":preload("res://DanmakuRelated/子弹碰撞/中玉.tres"),
+	"小玉":preload("res://DanmakuRelated/子弹碰撞/小玉.tres"),
+	"方玉":preload("res://DanmakuRelated/子弹碰撞/方玉.tres"),
+	"米玉":preload("res://DanmakuRelated/子弹碰撞/米玉.tres"),
+	"棱弹":preload("res://DanmakuRelated/子弹碰撞/棱弹.tres"),
+	"激光":preload("res://DanmakuRelated/子弹碰撞/激光.tres"),
 }
 
 var bullet_pics = {}
@@ -24,10 +24,10 @@ var bullet_pics = {}
 var bullet_polygons = {}
 
 var items = {
-	"Point":load("res://掉落物/Point.gd"),
-	"Power":load("res://掉落物/Power.gd"),
-	"MegaPower":load("res://掉落物/MegaPower.gd"),
-	"BiggerPower":load("res://掉落物/BiggerPower.gd")
+	"Point":load("res://Items/Point.gd"),
+	"Power":load("res://Items/Power.gd"),
+	"MegaPower":load("res://Items/MegaPower.gd"),
+	"BiggerPower":load("res://Items/BiggerPower.gd")
 }
 
 var item_pics = {
@@ -40,15 +40,15 @@ var item_pics = {
 var item_rects = {}
 
 var levels = {
-	"符卡测试":load("res://关卡/符卡测试关卡.tscn"),
-	"默认测试":load("res://关卡/默认测试关卡.tscn"),
+	"符卡测试":load("res://Stages/符卡测试关卡.tscn"),
+	"默认测试":load("res://Stages/默认测试关卡.tscn"),
 }
 
 var enemys = {
-#	"SqureBossEnemy":load("res://机体/敌机/Squre_BOSS_EnemyFlyer.tscn"),
-#	"EnemyFlyerFollowPath":load("res://机体/敌机/EnemyFlyerFollowPath.tscn"),
-	"EnemyFlyer":load("res://机体/敌机/默认敌机.tscn"),
-#	"Boss_01":load("res://机体/Boss/Boss_01.tscn"),
+#	"SqureBossEnemy":load("res://Player/敌机/Squre_BOSS_EnemyFlyer.tscn"),
+#	"EnemyFlyerFollowPath":load("res://Player/敌机/EnemyFlyerFollowPath.tscn"),
+	"EnemyFlyer":load("res://Player/敌机/默认敌机.tscn"),
+#	"Boss_01":load("res://Player/Boss/Boss_01.tscn"),
 }
 
 var UI = {

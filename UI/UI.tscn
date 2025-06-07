@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://d2x86ewor0p62"]
 
-[ext_resource type="FontFile" uid="uid://c44n1uvn6kupv" path="res://字体/VonwaonBitmap-12px.ttf" id="2_55vx8"]
-[ext_resource type="Texture2D" uid="uid://dir83bd4m2clj" path="res://机体/Boss/Boss_01.png" id="2_uj8mm"]
-[ext_resource type="Script" path="res://UI/UI.gd" id="3"]
+[ext_resource type="FontFile" uid="uid://c44n1uvn6kupv" path="res://Fonts/VonwaonBitmap-12px.ttf" id="2_55vx8"]
+[ext_resource type="Texture2D" uid="uid://dir83bd4m2clj" path="res://Player/Boss/Boss_01.png" id="2_uj8mm"]
+[ext_resource type="Script" uid="uid://bpoxq808r8snb" path="res://UI/UI.gd" id="3"]
 [ext_resource type="StyleBox" uid="uid://734qnxu3yk10" path="res://UI/spell_name_container.tres" id="3_eq4ti"]
 
 [sub_resource type="Shader" id="Shader_jdocf"]
@@ -213,8 +213,8 @@ tracks/7/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f6nk3"]
 _data = {
-"立绘淡出与字幕移动": SubResource("Animation_co8e2"),
-"立绘移动与字幕淡入": SubResource("Animation_y5ili")
+&"立绘淡出与字幕移动": SubResource("Animation_co8e2"),
+&"立绘移动与字幕淡入": SubResource("Animation_y5ili")
 }
 
 [node name="UI" type="CanvasLayer"]

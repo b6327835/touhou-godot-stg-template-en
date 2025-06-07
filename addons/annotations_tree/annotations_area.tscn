@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://ct1ykyf00v6r3"]
 
-[ext_resource type="Script" path="res://addons/annotations_tree/annotations_area.gd" id="1_id54t"]
+[ext_resource type="Script" uid="uid://pc3gtj55uvhq" path="res://addons/annotations_tree/annotations_area.gd" id="1_id54t"]
 
 [node name="AnnotationsArea" type="PanelContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( "1_id54t" )
+script = ExtResource("1_id54t")
 __meta__ = {
 "_edit_use_anchors_": false
 }

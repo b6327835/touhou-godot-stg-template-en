@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx748ul1ggtum"]
+
+[ext_resource type="Script" uid="uid://bf2g1fx4m82is" path="res://DanmakuRelated/meteor.gd" id="1_1q2h0"]
+
+[node name="meteor" type="Node2D"]
+script = ExtResource("1_1q2h0")

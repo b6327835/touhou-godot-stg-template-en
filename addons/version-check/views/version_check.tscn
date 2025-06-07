@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://csdu4qaewb4lm"]
 
-[ext_resource type="Script" path="res://addons/version-check/views/version_check.gd" id="1_qp010"]
+[ext_resource type="Script" uid="uid://dc181i31ikv0b" path="res://addons/version-check/views/version_check.gd" id="1_qp010"]
 [ext_resource type="Texture2D" uid="uid://beq55iai8q603" path="res://addons/version-check/icons/valid.svg" id="2_aouau"]
 
 [node name="version_check" type="HBoxContainer"]

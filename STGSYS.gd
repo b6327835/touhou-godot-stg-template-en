@@ -235,4 +235,3 @@ func fxInput(): #此函数用于处理方向的输入
 #		finalvector += direction
 #
 #	selfMoveVector = finalvector
-

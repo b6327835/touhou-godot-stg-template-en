@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d3a6r5br2nw5"]
 
-[ext_resource type="Script" path="res://addons/InstanceDock/InstanceDock.gd" id="2"]
+[ext_resource type="Script" uid="uid://gmjhc7nbnxxx" path="res://addons/InstanceDock/InstanceDock.gd" id="2"]
 
 [node name="Instances" type="PanelContainer"]
 anchor_bottom = 1.0
