@@ -47,13 +47,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="普通弹幕层" parent="." instance=ExtResource("1")]
+[node name="NormalDanmakuLayer" parent="." instance=ExtResource("1")]
 
-[node name="高光弹幕层" parent="." instance=ExtResource("1")]
+[node name="HighlightDanmakuLayer" parent="." instance=ExtResource("1")]
 material = SubResource("1")
 z_index = 3
 
-[node name="玩家子弹层" parent="." instance=ExtResource("1")]
+[node name="PlayerBulletLayer" parent="." instance=ExtResource("1")]
 z_index = -1
 
 [node name="关卡模板，可随时继承该模板做关卡" type="Node" parent="."]

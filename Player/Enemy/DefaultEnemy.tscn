@@ -27,7 +27,7 @@ shape = SubResource("1")
 lock_aim_direction = true
 enable = true
 end_sec = 0.1
-spawn_bullet_type = "方玉"
+spawn_bullet_type = "SquareBullet"
 spawn_bullet_color = 5
 spawn_bullet_frame = 40
 

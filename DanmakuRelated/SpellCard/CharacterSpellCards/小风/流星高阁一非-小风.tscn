@@ -30,7 +30,7 @@ end_sec = 0.0
 never_end = true
 aspeed = 0.01
 bullet_speed = 4.0
-spawn_bullet_type = "扳手弹"
+spawn_bullet_type = "WrenchBullet"
 spawn_bullet_color = 1
 spawn_bullet_frame = 20
 rotate_bullet = true
@@ -42,7 +42,7 @@ end_sec = 0.0
 never_end = true
 bullet_aspeed = 0.01
 bullet_aspeed_rotation = 180.0
-spawn_bullet_type = "雏翼弹"
+spawn_bullet_type = "SmallBullet"
 way_num = 10
 spawn_bullet_frame = 40
 

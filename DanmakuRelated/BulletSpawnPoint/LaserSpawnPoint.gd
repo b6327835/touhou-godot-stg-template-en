@@ -95,7 +95,7 @@ func spawn_raser():
 	$StartCollideTimer.start()
 
 func spawn_group_raser_beforeline():
-	bullet_manager_name = "玩家子弹层"
+	bullet_manager_name = "PlayerBulletLayer"
 	var bullets = []
 	for w in range(way_num):
 		var raser_line = get_bullet("判定线")
@@ -103,7 +103,7 @@ func spawn_group_raser_beforeline():
 		bullets.append(raser_line)
 	set_way_bullet_spawn(bullets)
 	spawn_group_of_bullet(bullets)
-	bullet_manager_name = "高光弹幕层"
+	bullet_manager_name = "HighlightDanmakuLayer"
 
 func _on_ready():
 	#该发弹点加载好的时候运行

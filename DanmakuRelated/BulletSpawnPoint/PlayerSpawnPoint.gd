@@ -1,8 +1,8 @@
 extends BulletSpawner
 
 func _on_ready():
-	bullet_manager_name = "玩家子弹层"
-	spawn_bullet_type = "小玉"
+	bullet_manager_name = "PlayerBulletLayer"
+	spawn_bullet_type = "SmallBullet"
 	spawn_bullet_owner = "self"
 	way_rotation = -180
 

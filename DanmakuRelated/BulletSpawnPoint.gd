@@ -12,7 +12,7 @@ enum MANAGE_TYPE {COMMON,HIGHLIGHT}
 @export var end_sec = 20.0 #多少秒后自动结束发射
 @export var never_end = false #不结束发射的选项
 @export var bullet_manager_type: MANAGE_TYPE = MANAGE_TYPE.COMMON
-var bullet_manager_name = "普通弹幕层"
+var bullet_manager_name = "NormalDanmakuLayer"
 
 #自运动配置
 @export_group("发弹点运动")
@@ -35,7 +35,7 @@ var bullet_manager_name = "普通弹幕层"
 var bullet_damage := 1.0 #子弹伤害，不可配置，根据技能自动计算伤害
 #注：这里的rotation单位是角度，而非弧度
 @export var bullet_aspeed_rotation = 0.0 #子弹加速度方向，决定子弹发射的加速度方向。
-@export var spawn_bullet_type = "小玉" #子弹类型名称，需要在RSLOADER注册子弹场景
+@export var spawn_bullet_type = "SmallBullet" #子弹类型名称，需要在RSLOADER注册子弹场景
 @export var spawn_bullet_color = 0
 @export var spawn_bullet_owner = "none"
 @export var bullet_scale = Vector2(1,1)
@@ -113,7 +113,7 @@ func _ready():
 			bullet_event_groups.append(beg)
 	_on_ready()
 	if bullet_manager_type == MANAGE_TYPE.HIGHLIGHT:
-		bullet_manager_name = "高光弹幕层"
+		bullet_manager_name = "HighlightDanmakuLayer"
 	
 	if enable:
 		start_shoot_count()

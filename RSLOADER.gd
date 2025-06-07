@@ -11,12 +11,17 @@ var bullet_spawner = {
 }
 
 var bullet_collision_shapes = {
-	"中玉":preload("res://DanmakuRelated/BulletCollision/中玉.tres"),
-	"小玉":preload("res://DanmakuRelated/BulletCollision/小玉.tres"),
-	"方玉":preload("res://DanmakuRelated/BulletCollision/方玉.tres"),
-	"米玉":preload("res://DanmakuRelated/BulletCollision/米玉.tres"),
-	"棱弹":preload("res://DanmakuRelated/BulletCollision/棱弹.tres"),
-	"激光":preload("res://DanmakuRelated/BulletCollision/激光.tres"),
+	"MediumBullet":preload("res://DanmakuRelated/BulletCollision/MediumBullet.tres"),
+	"SmallBullet":preload("res://DanmakuRelated/BulletCollision/SmallBullet.tres"),
+	"SquareBullet":preload("res://DanmakuRelated/BulletCollision/SquareBullet.tres"),
+	"RiceBullet":preload("res://DanmakuRelated/BulletCollision/RiceBullet.tres"),
+	"PrismBullet":preload("res://DanmakuRelated/BulletCollision/PrismBullet.tres"),
+	"Laser":preload("res://DanmakuRelated/BulletCollision/Laser.tres"),
+	"BookBullet":preload("res://DanmakuRelated/BulletCollision/BookBullet.tres"),
+	"HitboxLine":preload("res://DanmakuRelated/BulletCollision/HitboxLine.tres"),
+	"StarBullet":preload("res://DanmakuRelated/BulletCollision/StarBullet.tres"),
+	"WingBullet":preload("res://DanmakuRelated/BulletCollision/WingBullet.tres"),
+	"WrenchBullet":preload("res://DanmakuRelated/BulletCollision/WrenchBullet.tres"),
 }
 
 var bullet_pics = {}

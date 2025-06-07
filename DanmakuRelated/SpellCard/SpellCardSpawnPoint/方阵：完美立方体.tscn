@@ -59,7 +59,7 @@ func bullet_run_logic(bull,delta):
 script = SubResource("1")
 bullet_life = 100
 bullet_speed = 2.0
-spawn_bullet_type = "方玉"
+spawn_bullet_type = "SquareBullet"
 way_num = 40
 way_rotation = -180.0
 spawner_radius = 200.0

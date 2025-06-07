@@ -67,8 +67,8 @@ func start_atk():
 	
 func next_round():
 	var level = STGSYS.get_level()
-	level.get_node("普通弹幕层").clear = false
-	level.get_node("高光弹幕层").clear = false
+	level.get_node("NormalDanmakuLayer").clear = false
+	level.get_node("HighlightDanmakuLayer").clear = false
 	if now_sub_round < atk_rounds[now_round].size() - 1:
 		now_sub_round += 1
 	else:
@@ -110,8 +110,8 @@ func boss_end_atk():
 	
 	var card_score
 	if card["is_spell_card"]:
-		card_score = card["score"] + level.get_node("普通弹幕层").bullets.size()+\
-	level.get_node("高光弹幕层").bullets.size()
+		card_score = card["score"] + level.get_node("NormalDanmakuLayer").bullets.size()+\
+	level.get_node("HighlightDanmakuLayer").bullets.size()
 	else:
 		card_score = card["score"]
 	
@@ -120,8 +120,8 @@ func boss_end_atk():
 	STGSYS.change_value("score",STGSYS.score+card_score)
 	
 	if card["is_spell_card"]:
-		level.get_node("普通弹幕层").clear = true
-		level.get_node("高光弹幕层").clear = true
+		level.get_node("NormalDanmakuLayer").clear = true
+		level.get_node("HighlightDanmakuLayer").clear = true
 	
 	#开始下一轮
 	$AtkChangeTimer.start()
@@ -133,8 +133,8 @@ func boss_dead():
 #	$HitArea/CollisionShape2D.call_deferred("set_disabled", true)
 	remove_bullet_spawner()
 	var level = STGSYS.get_level()
-	level.get_node("普通弹幕层").clear = true
-	level.get_node("高光弹幕层").clear = true
+	level.get_node("NormalDanmakuLayer").clear = true
+	level.get_node("HighlightDanmakuLayer").clear = true
 	UI.show_boss_hp = false
 	STGSYS.remove_boss()
 	queue_free()

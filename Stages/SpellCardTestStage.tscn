@@ -14,29 +14,29 @@
 [sub_resource type="CanvasItemMaterial" id="1"]
 blend_mode = 1
 
-[node name="符卡测试" type="Node2D"]
+[node name="SpellCardTest" type="Node2D"]
 script = ExtResource("3")
 
 [node name="默认自机" parent="." instance=ExtResource("1")]
 position = Vector2(239, 513)
 
-[node name="敌人" type="Node2D" parent="."]
+[node name="Enemies" type="Node2D" parent="."]
 metadata/_edit_lock_ = true
 
-[node name="符卡" type="Node2D" parent="."]
+[node name="SpellCards" type="Node2D" parent="."]
 metadata/_edit_lock_ = true
 
-[node name="方块一非" parent="符卡" instance=ExtResource("3_4gjfb")]
+[node name="SquareNon1" parent="SpellCards" instance=ExtResource("3_4gjfb")]
 
-[node name="方块二非" parent="符卡" instance=ExtResource("4_2dpl5")]
+[node name="SquareNon2" parent="SpellCards" instance=ExtResource("4_2dpl5")]
 
-[node name="范例：波与粒的境界" parent="符卡" instance=ExtResource("7")]
+[node name="Example:WaveParticleBoundary" parent="SpellCards" instance=ExtResource("7")]
 
-[node name="方符：摇曳方阵" parent="符卡" instance=ExtResource("6")]
+[node name="Square:WavingFormation" parent="SpellCards" instance=ExtResource("6")]
 
-[node name="棱符：天棱地方" parent="符卡" instance=ExtResource("4")]
+[node name="Prism:HeavenEarthPrism" parent="SpellCards" instance=ExtResource("4")]
 
-[node name="方阵：完美立方体" parent="符卡" instance=ExtResource("5")]
+[node name="Formation:PerfectCube" parent="SpellCards" instance=ExtResource("5")]
 
 [node name="Background" type="ParallaxBackground" parent="."]
 
@@ -51,14 +51,14 @@ color = Color(0, 0, 0, 1)
 offset_top = -648.0
 offset_right = 480.0
 
-[node name="普通弹幕层" parent="." instance=ExtResource("2")]
+[node name="NormalDanmakuLayer" parent="." instance=ExtResource("2")]
 
-[node name="高光弹幕层" parent="." instance=ExtResource("2")]
+[node name="HighlightDanmakuLayer" parent="." instance=ExtResource("2")]
 material = SubResource("1")
 z_index = 3
 
-[node name="玩家子弹层" parent="." instance=ExtResource("2")]
+[node name="PlayerBulletLayer" parent="." instance=ExtResource("2")]
 z_index = -1
 
-[node name="道具管理器" parent="." instance=ExtResource("9_6w5xb")]
+[node name="ItemManager" parent="." instance=ExtResource("9_6w5xb")]
 z_index = 11

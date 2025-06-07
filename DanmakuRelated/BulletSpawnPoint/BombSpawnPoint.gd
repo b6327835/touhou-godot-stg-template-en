@@ -2,7 +2,7 @@ class_name BulletSpawnerBomb
 extends BulletSpawner
 
 func _on_ready():
-	bullet_manager_name = "玩家子弹层"
+	bullet_manager_name = "PlayerBulletLayer"
 	spawn_bullet_owner = "self_bomb"
 
 #func bullet_spawn_logic():

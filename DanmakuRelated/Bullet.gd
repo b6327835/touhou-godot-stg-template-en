@@ -6,7 +6,7 @@ const SPEED_MULTIPLYER = 100
 var color = 0
 var b_owner = "none"
 var moving_type = "linear"
-var bullet_type = "中玉" :
+var bullet_type = "MediumBullet" :
 	get:
 		return bullet_type
 	set(t):

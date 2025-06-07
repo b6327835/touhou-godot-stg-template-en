@@ -2,7 +2,7 @@ extends BulletSpawner
 class_name EnemyFlyerShooter
 
 func _on_ready():
-	bullet_manager_name = "敌人"
+	bullet_manager_name = "NormalDanmakuLayer"
 
 func bullet_spawn_logic():
 	var enemys = get_bullet_group(way_num)

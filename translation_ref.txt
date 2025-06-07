@@ -248,6 +248,7 @@ GameWindow配色.tres = GameWindowColorScheme.tres
   - 基础遮罩.gd (BasicMask.gd)
   - 基础遮罩.gd.uid (BasicMask.gd.uid)
   - 基础遮罩.tscn (BasicMask.tscn)
+- 玩家子弹层 (PlayerBulletLayer)
 
 @/script_templates
 - Node/

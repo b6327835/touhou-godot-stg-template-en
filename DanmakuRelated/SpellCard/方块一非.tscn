@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b5miubddjgdb0"]
 
 [ext_resource type="PackedScene" uid="uid://d3dhei3xytom4" path="res://DanmakuRelated/SpellCard/基础符卡.tscn" id="1_safqm"]
-[ext_resource type="PackedScene" uid="uid://xiy36hf3s4pl" path="res://DanmakuRelated/BulletSpawnPoint/敌机发射器.tscn" id="2_5yubr"]
+[ext_resource type="PackedScene" uid="uid://xiy36hf3s4pl" path="res://DanmakuRelated/BulletSpawnPoint/EnemyEmitter.tscn" id="2_5yubr"]
 
 [sub_resource type="GDScript" id="GDScript_o78hv"]
 resource_name = "方块一非"
@@ -90,6 +90,3 @@ never_end = true
 way_num = 4
 way_range = 180.0
 spawn_bullet_frame = 50
-
-[node name="测试背景" parent="." index="4"]
-metadata/_edit_lock_ = true

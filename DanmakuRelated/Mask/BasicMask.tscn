@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://4u2oee44mit2"]
 
-[ext_resource type="Script" uid="uid://c1pfag4ovcy06" path="res://DanmakuRelated/Mask/基础遮罩.gd" id="1_1bfm7"]
+[ext_resource type="Script" uid="uid://c1pfag4ovcy06" path="res://DanmakuRelated/Mask/BasicMask.gd" id="1_1bfm7"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 resource_local_to_scene = true

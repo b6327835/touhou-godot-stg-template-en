@@ -28,7 +28,7 @@ enum MANAGE_TYPE {COMMON,HIGHLIGHT}
 @export var bullet_aspeed = 0.0 #子弹加速度，决定子弹发射时的加速度
 #注：这里的rotation单位是角度，而非弧度
 @export var bullet_aspeed_rotation = 0 #子弹加速度方向，决定子弹发射的加速度方向。
-@export var spawn_bullet_type = "小玉" #子弹类型名称，需要在RSLOADER注册子弹场景
+@export var spawn_bullet_type = "SmallBullet" #子弹类型名称，需要在RSLOADER注册子弹场景
 @export var spawn_bullet_color = 0
 @export var spawn_bullet_owner = "none"
 @export var bullet_scale = Vector2(1,1)
