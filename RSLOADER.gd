@@ -40,8 +40,8 @@ var item_pics = {
 var item_rects = {}
 
 var levels = {
-	"符卡测试":load("res://Stages/符卡测试关卡.tscn"),
-	"默认测试":load("res://Stages/默认测试关卡.tscn"),
+	"符卡测试":load("res://Stages/SpellCardTestStage.tscn"),
+	"默认测试":load("res://Stages/DefaultTestStage.tscn"),
 }
 
 var enemys = {
