@@ -154,7 +154,7 @@ outline_color = Color(0.435294, 0.00392157, 0.729412, 1)
 shadow_size = 6
 shadow_color = Color(0, 0, 0, 0.439216)
 
-[node name="东方弹幕绘" type="Node2D"]
+[node name="TouhouDanmakuTemplate" type="Node2D"]
 script = ExtResource("1_d073v")
 
 [node name="GameWindow" type="Panel" parent="."]

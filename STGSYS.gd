@@ -65,7 +65,7 @@ func _process(delta):
 	time_fps = Performance.get_monitor(Performance.TIME_FPS)
 	fps_time = Performance.get_monitor(Performance.TIME_PROCESS)
 	get_tree().get_root().\
-	get_node("东方弹幕绘").get_node("FPS").text = "FPS：%d"%time_fps
+	get_node("TouhouDanmakuTemplate").get_node("FPS").text = "FPS：%d"%time_fps
 
 func frame_to_sec(frame):
 	return frame*fps_time
@@ -73,7 +73,7 @@ func frame_to_sec(frame):
 func _ready():
 	randomize()
 	connect("game_over",Callable(self,"_on_game_over"))
-	view_portsize = get_node("/root/东方弹幕绘/GameWindow/SubViewportContainer/SubViewport").size
+	view_portsize = get_node("/root/TouhouDanmakuTemplate/GameWindow/SubViewportContainer/SubViewport").size
 
 func get_player(): #获取当前玩家
 	return player

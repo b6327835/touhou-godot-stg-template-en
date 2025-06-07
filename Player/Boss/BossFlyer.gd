@@ -33,7 +33,7 @@ var now_sub_round = 0 #当前子回合（回合内的第几个攻击模式）
 	],
 ] #回合和子回合
 
-@onready var UI = get_node("/root/东方弹幕绘/UI")
+@onready var UI = get_node("/root/TouhouDanmakuTemplate/UI")
 @onready var player = STGSYS.get_player()
 
 signal before_atk

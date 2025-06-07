@@ -11,12 +11,12 @@ var bullet_spawner = {
 }
 
 var bullet_collision_shapes = {
-	"中玉":preload("res://DanmakuRelated/子弹碰撞/中玉.tres"),
-	"小玉":preload("res://DanmakuRelated/子弹碰撞/小玉.tres"),
-	"方玉":preload("res://DanmakuRelated/子弹碰撞/方玉.tres"),
-	"米玉":preload("res://DanmakuRelated/子弹碰撞/米玉.tres"),
-	"棱弹":preload("res://DanmakuRelated/子弹碰撞/棱弹.tres"),
-	"激光":preload("res://DanmakuRelated/子弹碰撞/激光.tres"),
+	"中玉":preload("res://DanmakuRelated/BulletCollision/中玉.tres"),
+	"小玉":preload("res://DanmakuRelated/BulletCollision/小玉.tres"),
+	"方玉":preload("res://DanmakuRelated/BulletCollision/方玉.tres"),
+	"米玉":preload("res://DanmakuRelated/BulletCollision/米玉.tres"),
+	"棱弹":preload("res://DanmakuRelated/BulletCollision/棱弹.tres"),
+	"激光":preload("res://DanmakuRelated/BulletCollision/激光.tres"),
 }
 
 var bullet_pics = {}
@@ -45,9 +45,9 @@ var levels = {
 }
 
 var enemys = {
-#	"SqureBossEnemy":load("res://Player/敌机/Squre_BOSS_EnemyFlyer.tscn"),
-#	"EnemyFlyerFollowPath":load("res://Player/敌机/EnemyFlyerFollowPath.tscn"),
-	"EnemyFlyer":load("res://Player/敌机/默认敌机.tscn"),
+#	"SqureBossEnemy":load("res://Player/PlayerCharacter/Squre_BOSS_EnemyFlyer.tscn"),
+#	"EnemyFlyerFollowPath":load("res://Player/PlayerCharacter/EnemyFlyerFollowPath.tscn"),
+	"EnemyFlyer":load("res://Player/PlayerCharacter/默认敌机.tscn"),
 #	"Boss_01":load("res://Player/Boss/Boss_01.tscn"),
 }
 

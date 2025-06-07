@@ -7,7 +7,7 @@ var normal_bar_ratio = 3
 var spell_bar_ratio = 1
 
 var boss = null
-#onready var viewport = get_node("/root/东方弹幕绘/GameWindow/SubViewportContainer/SubViewport")
+#onready var viewport = get_node("/root/TouhouDanmakuTemplate/GameWindow/SubViewportContainer/SubViewport")
 
 func _ready():
 	STGSYS.UI = self
@@ -45,7 +45,7 @@ func createBossHpBar(bar_info_ori := []):
 	#移除旧生命条
 	remove_hp_bars()
 	
-	var viewport = get_node("/root/东方弹幕绘/GameWindow/SubViewportContainer/SubViewport")
+	var viewport = get_node("/root/TouhouDanmakuTemplate/GameWindow/SubViewportContainer/SubViewport")
 	var bar_max_length = float(round(viewport.size.x - $HpContainer.offset_left - $HpContainer.offset_right)) - 10
 	var total_ratio = 0
 	for info in bar_info:

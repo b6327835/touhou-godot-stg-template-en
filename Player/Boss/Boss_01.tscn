@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://d10wedqmohogw" path="res://Player/Boss/BossFlyer.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://dir83bd4m2clj" path="res://Player/Boss/Boss_01.png" id="2"]
-[ext_resource type="PackedScene" uid="uid://d1bmakohvgygy" path="res://DanmakuRelated/符卡/方符：摇曳方阵.tscn" id="3"]
-[ext_resource type="PackedScene" uid="uid://b5miubddjgdb0" path="res://DanmakuRelated/符卡/方块一非.tscn" id="3_hmxy1"]
-[ext_resource type="PackedScene" uid="uid://dlrgh5rcaxcqf" path="res://DanmakuRelated/符卡/方阵：完美立方体.tscn" id="4"]
-[ext_resource type="PackedScene" uid="uid://bfi1eeyo7tvgb" path="res://DanmakuRelated/符卡/方块二非.tscn" id="4_g3h5i"]
-[ext_resource type="PackedScene" uid="uid://sw1vi562t4f3" path="res://DanmakuRelated/符卡/棱符：天棱地方.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://d1bmakohvgygy" path="res://DanmakuRelated/SpellCard/方符：摇曳方阵.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b5miubddjgdb0" path="res://DanmakuRelated/SpellCard/方块一非.tscn" id="3_hmxy1"]
+[ext_resource type="PackedScene" uid="uid://dlrgh5rcaxcqf" path="res://DanmakuRelated/SpellCard/方阵：完美立方体.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bfi1eeyo7tvgb" path="res://DanmakuRelated/SpellCard/方块二非.tscn" id="4_g3h5i"]
+[ext_resource type="PackedScene" uid="uid://sw1vi562t4f3" path="res://DanmakuRelated/SpellCard/棱符：天棱地方.tscn" id="5"]
 
 [sub_resource type="Shader" id="2"]
 code = "shader_type canvas_item;
