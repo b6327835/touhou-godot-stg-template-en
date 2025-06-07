@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b4gylfywvvl1y"]
 
-[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/发弹点.tscn" id="2_shnqp"]
+[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/BulletSpawnPoint.tscn" id="2_shnqp"]
 
 [sub_resource type="Resource" id="Resource_b2ab4"]
 metadata/__load_path__ = "res://战斗系统/弹幕相关/符卡/基础符卡.tscn"

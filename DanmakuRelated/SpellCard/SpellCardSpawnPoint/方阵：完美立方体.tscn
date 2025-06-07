@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://badcxhgm70yw1"]
 
-[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/发弹点.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/BulletSpawnPoint.tscn" id="1"]
 
 [sub_resource type="GDScript" id="1"]
 script/source = "extends BulletSpawner

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c0hfmunyramkh"]
 
-[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/发弹点.tscn" id="1"]
-[ext_resource type="Script" uid="uid://ck81xxl50wtnh" path="res://Player/PlayerCharacter/EnemyFlyerFollowPath.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/BulletSpawnPoint.tscn" id="1"]
+[ext_resource type="Script" uid="uid://ck81xxl50wtnh" path="res://Player/Enemy/EnemyFlyerFollowPath.gd" id="2"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(40, 40)

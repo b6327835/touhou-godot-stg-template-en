@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cm0luvnew0epu"]
 
-[ext_resource type="PackedScene" uid="uid://c5634a0dfaffs" path="res://Player/PlayerCharacter/默认敌机.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://c5634a0dfaffs" path="res://Player/Enemy/DefaultEnemy.tscn" id="1"]
 
 [node name="SqureBossEnemyFlyer" instance=ExtResource("1")]
 

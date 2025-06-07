@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://lakyayu5yndf"]
 
-[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/发弹点.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/BulletSpawnPoint.tscn" id="1"]
 [ext_resource type="Script" uid="uid://cl63fjfuu3ik5" path="res://DanmakuRelated/BulletSpawnPoint/发弹点发射器.gd" id="2_whv8w"]
 
 [node name="发弹点发射器" instance=ExtResource("1")]

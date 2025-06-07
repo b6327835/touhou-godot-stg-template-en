@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cx5q3jjpm7d3m"]
 
 [ext_resource type="Script" uid="uid://csql5u751lya0" path="res://DanmakuRelated/BulletSpawnPoint/激光发弹点.gd" id="1"]
-[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/发弹点.tscn" id="2"]
-[ext_resource type="SpriteFrames" uid="uid://dkdspdapwonog" path="res://DanmakuRelated/子弹样式组.tres" id="3_dop30"]
+[ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/BulletSpawnPoint.tscn" id="2"]
+[ext_resource type="SpriteFrames" uid="uid://dkdspdapwonog" path="res://DanmakuRelated/BulletStyleGroup.tres" id="3_dop30"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1hyty"]
 radius = 5.0

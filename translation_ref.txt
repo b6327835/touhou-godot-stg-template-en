@@ -247,4 +247,12 @@ GameWindow配色.tres = GameWindowColorScheme.tres
 - 遮罩/ (Mask/)
   - 基础遮罩.gd (BasicMask.gd)
   - 基础遮罩.gd.uid (BasicMask.gd.uid)
-  - 基础遮罩.tscn (BasicMask.tscn) 
+  - 基础遮罩.tscn (BasicMask.tscn)
+
+@/script_templates
+- Node/
+  - 符卡模板.gd (SpellCardTemplate.gd)
+  - 符卡模板.gd.uid (SpellCardTemplate.gd.uid)
+- Marker2D/
+  - 发弹点模板.gd (BulletSpawnPointTemplate.gd)
+  - 发弹点模板.gd.uid (BulletSpawnPointTemplate.gd.uid) 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c5634a0dfaffs"]
 
-[ext_resource type="Script" uid="uid://ciip3iuyu0jfm" path="res://Player/PlayerCharacter/默认敌机.gd" id="1"]
+[ext_resource type="Script" uid="uid://ciip3iuyu0jfm" path="res://Player/Enemy/DefaultEnemy.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://ph47big6y1eh" path="res://DanmakuRelated/BulletSpawnPoint/自机狙发弹点.tscn" id="2_ebdk7"]
 
 [sub_resource type="RectangleShape2D" id="1"]

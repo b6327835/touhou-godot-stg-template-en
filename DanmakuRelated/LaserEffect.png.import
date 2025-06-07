@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgwkjq2et0xsv"
-path="res://.godot/imported/判定线.png-22b2f82c21ce66ac70197afc1caf7d61.ctex"
+uid="uid://djbbw8x483dn1"
+path="res://.godot/imported/LaserEffect.png-d0f88fabe216812f00132cf8b31598b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DanmakuRelated/判定线.png"
-dest_files=["res://.godot/imported/判定线.png-22b2f82c21ce66ac70197afc1caf7d61.ctex"]
+source_file="res://DanmakuRelated/LaserEffect.png"
+dest_files=["res://.godot/imported/LaserEffect.png-d0f88fabe216812f00132cf8b31598b6.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@ extends Node
 signal load_finish
 
 var bullet_sprite_frames = [
-	preload("res://DanmakuRelated/子弹样式组.tres")
+	preload("res://DanmakuRelated/BulletStyleGroup.tres")
 ]
 
 var bullet_spawner = {
@@ -45,10 +45,10 @@ var levels = {
 }
 
 var enemys = {
-#	"SqureBossEnemy":load("res://Player/PlayerCharacter/Squre_BOSS_EnemyFlyer.tscn"),
-#	"EnemyFlyerFollowPath":load("res://Player/PlayerCharacter/EnemyFlyerFollowPath.tscn"),
-	"EnemyFlyer":load("res://Player/PlayerCharacter/默认敌机.tscn"),
-#	"Boss_01":load("res://Player/Boss/Boss_01.tscn"),
+	#"SqureBossEnemy":load("res://Player/Enemy/Squre_BOSS_EnemyFlyer.tscn"),
+	#"EnemyFlyerFollowPath":load("res://Player/Enemy/EnemyFlyerFollowPath.tscn"),
+	"EnemyFlyer":load("res://Player/Enemy/DefaultEnemy.tscn"),
+	#"Boss_01":load("res://Player/Boss/Boss_01.tscn"),
 }
 
 var UI = {

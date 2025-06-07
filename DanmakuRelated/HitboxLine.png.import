@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djbbw8x483dn1"
-path="res://.godot/imported/激光的表现.png-9254785e34846f9b3a2bf882934bb0e9.ctex"
+uid="uid://cgwkjq2et0xsv"
+path="res://.godot/imported/HitboxLine.png-5905361c65c2f69bbd2527eab84cdfcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DanmakuRelated/激光的表现.png"
-dest_files=["res://.godot/imported/激光的表现.png-9254785e34846f9b3a2bf882934bb0e9.ctex"]
+source_file="res://DanmakuRelated/HitboxLine.png"
+dest_files=["res://.godot/imported/HitboxLine.png-5905361c65c2f69bbd2527eab84cdfcc.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://rk3pi4a0yxn1"]
 
-[ext_resource type="SpriteFrames" uid="uid://dkdspdapwonog" path="res://DanmakuRelated/子弹样式组.tres" id="1"]
+[ext_resource type="SpriteFrames" uid="uid://dkdspdapwonog" path="res://DanmakuRelated/BulletStyleGroup.tres" id="1"]
 [ext_resource type="Shape2D" uid="uid://dumc5t8lw5i5o" path="res://DanmakuRelated/BulletCollision/中玉.tres" id="2"]
 [ext_resource type="Shape2D" uid="uid://cods3xfpficvs" path="res://DanmakuRelated/BulletCollision/小玉.tres" id="3"]
 [ext_resource type="Shape2D" uid="uid://coucf8ho0xnw3" path="res://DanmakuRelated/BulletCollision/方玉.tres" id="4"]

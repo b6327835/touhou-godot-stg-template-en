@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=275 format=3 uid="uid://dkdspdapwonog"]
 
-[ext_resource type="Texture2D" uid="uid://djbbw8x483dn1" path="res://DanmakuRelated/激光的表现.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://djbbw8x483dn1" path="res://DanmakuRelated/LaserEffect.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://51rhxfxwijm" path="res://DanmakuRelated/touhou_pixel_bullets.png" id="2"]
 
 [sub_resource type="AtlasTexture" id="1"]

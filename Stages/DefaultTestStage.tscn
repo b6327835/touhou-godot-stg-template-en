@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://2s5t3r7st042"]
 
-[ext_resource type="PackedScene" uid="uid://bdhemm4610hao" path="res://Player/Enemy/默认自机.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://ctu80chj0xwkp" path="res://DanmakuRelated/弹幕管理器.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://bdhemm4610hao" path="res://Player/PlayerCharacter/DefaultPlayer.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://ctu80chj0xwkp" path="res://DanmakuRelated/DanmakuManager.tscn" id="2"]
 [ext_resource type="Script" uid="uid://bly10l1gdyjw3" path="res://Stages/DefaultStageScript.gd" id="3"]
 [ext_resource type="PackedScene" uid="uid://o2n0y8txkeca" path="res://Items/ItemManager.tscn" id="5_0rjhw"]
 [ext_resource type="PackedScene" uid="uid://cyvk0eu1ylks4" path="res://Player/Boss/Boss_01.tscn" id="8"]
@@ -57,5 +57,5 @@ z_index = -1
 
 [node name="符卡" type="Node2D" parent="."]
 
-[node name="道具管理器" parent="." instance=ExtResource("5_0rjhw")]
+[node name="ItemManager" parent="." instance=ExtResource("5_0rjhw")]
 z_index = 11

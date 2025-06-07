@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://b15icg2gdc0n0"]
 
-[ext_resource type="PackedScene" uid="uid://bdhemm4610hao" path="res://Player/Enemy/默认自机.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://ctu80chj0xwkp" path="res://DanmakuRelated/弹幕管理器.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://bdhemm4610hao" path="res://Player/PlayerCharacter/DefaultPlayer.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://ctu80chj0xwkp" path="res://DanmakuRelated/DanmakuManager.tscn" id="2"]
 [ext_resource type="Script" uid="uid://bly10l1gdyjw3" path="res://Stages/DefaultStageScript.gd" id="3"]
 [ext_resource type="PackedScene" uid="uid://b5miubddjgdb0" path="res://DanmakuRelated/SpellCard/方块一非.tscn" id="3_4gjfb"]
 [ext_resource type="PackedScene" uid="uid://sw1vi562t4f3" path="res://DanmakuRelated/SpellCard/棱符：天棱地方.tscn" id="4"]
