@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7k52r8wgwnka"
-path="res://.godot/imported/STG游戏显示顺序.jpg-31224f55176d964ebe0888fadf05f26a.ctex"
+path="res://.godot/imported/STGDisplayOrder.jpg-0f56250cf0b0f49c39ce6e579054667e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BasicPlanningPrinciples/STG游戏显示顺序.jpg"
-dest_files=["res://.godot/imported/STG游戏显示顺序.jpg-31224f55176d964ebe0888fadf05f26a.ctex"]
+source_file="res://BasicPlanningPrinciples/STGDisplayOrder.jpg"
+dest_files=["res://.godot/imported/STGDisplayOrder.jpg-0f56250cf0b0f49c39ce6e579054667e.ctex"]
 
 [params]
 

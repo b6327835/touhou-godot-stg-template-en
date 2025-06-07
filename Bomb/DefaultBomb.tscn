@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://88dab7331ear"]
 
-[ext_resource type="Script" uid="uid://btfirr5f3rfea" path="res://Bomb/默认炸弹.gd" id="1"]
-[ext_resource type="PackedScene" uid="uid://yqsio7nj78f4" path="res://Bomb/默认炸弹发弹点.tscn" id="2"]
+[ext_resource type="Script" uid="uid://btfirr5f3rfea" path="res://Bomb/DefaultBomb.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://yqsio7nj78f4" path="res://Bomb/DefaultBombSpawnPoint.tscn" id="2"]
 
 [node name="默认炸弹" type="Node2D"]
 script = ExtResource("1")
