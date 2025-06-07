@@ -1,33 +1,33 @@
 [gd_scene load_steps=49 format=3 uid="uid://lakvsrra3wdc"]
 
-[ext_resource type="FontFile" uid="uid://bfulrtgnpdxb5" path="res://Fonts/进度条文本.tres" id="1"]
-[ext_resource type="Script" uid="uid://blwtmc0dmp0xs" path="res://main.gd" id="1_d073v"]
-[ext_resource type="FontFile" path="res://Fonts/标题.tres" id="4"]
-[ext_resource type="FontFile" path="res://Fonts/number.tres" id="4_avm47"]
-[ext_resource type="Texture2D" uid="uid://wnvy23lfk22n" path="res://Resource/texture/Point.png" id="5"]
-[ext_resource type="PackedScene" uid="uid://d2x86ewor0p62" path="res://UI/UI.tscn" id="6"]
-[ext_resource type="Texture2D" uid="uid://brtxymjhomfrl" path="res://Resource/texture/P_Point.png" id="6_3fn0i"]
-[ext_resource type="FontFile" path="res://Fonts/分数标题.tres" id="7"]
-[ext_resource type="Texture2D" uid="uid://wnltn64cscho" path="res://Resource/texture/生命心值.png" id="8"]
-[ext_resource type="Script" uid="uid://c02uaoxr3tnqr" path="res://NumberPanel.gd" id="9"]
-[ext_resource type="Texture2D" uid="uid://db27h2qfhkxhi" path="res://Resource/texture/符卡值.png" id="10"]
-[ext_resource type="Script" uid="uid://blb2qi4rugbky" path="res://GameWindow.gd" id="11"]
-[ext_resource type="FontFile" uid="uid://c5o8vt8loqopj" path="res://Fonts/WenQuanDianZhenZhengHei-1.ttf" id="13"]
-[ext_resource type="StyleBox" uid="uid://kcop8uhva3ey" path="res://GameWindow配色.tres" id="13_0rpnd"]
-[ext_resource type="Script" uid="uid://cruwj1sr8sbgp" path="res://GameOverWindow.gd" id="14"]
-[ext_resource type="Script" uid="uid://cvuca700e87rp" path="res://MainMenu.gd" id="14_otkbh"]
-[ext_resource type="FontFile" uid="uid://cqaf3f2x2dgg8" path="res://Fonts/VonwaonBitmap-16px.ttf" id="14_vor10"]
-[ext_resource type="FontFile" uid="uid://c44n1uvn6kupv" path="res://Fonts/VonwaonBitmap-12px.ttf" id="16_8uqvo"]
-[ext_resource type="AudioStream" uid="uid://c0culew7ap6gs" path="res://Audio/SE/toggle_003.wav" id="17_067iu"]
-[ext_resource type="StyleBox" uid="uid://h25cxnkvn8hj" path="res://UI/difficult_panel.tres" id="18_gvgl1"]
-[ext_resource type="Shader" uid="uid://cngg3mb3wax7e" path="res://UI/difficult_panel.gdshader" id="18_sl2nt"]
-[ext_resource type="Script" uid="uid://coyetqimjx6rf" path="res://difficult_panel.gd" id="19_dftaq"]
+[ext_resource type="Script" uid="uid://blwtmc0dmp0xs" path="res://main.gd" id="1_pix85"]
+[ext_resource type="Script" uid="uid://blb2qi4rugbky" path="res://GameWindow.gd" id="2_xlc4h"]
+[ext_resource type="Script" uid="uid://c02uaoxr3tnqr" path="res://NumberPanel.gd" id="3_fl1y3"]
+[ext_resource type="FontFile" path="res://Fonts/分数标题.tres" id="4_3smgk"]
+[ext_resource type="FontFile" path="res://Fonts/number.tres" id="5_ce7jt"]
+[ext_resource type="FontFile" path="res://Fonts/标题.tres" id="6_kiaa0"]
+[ext_resource type="FontFile" uid="uid://c5o8vt8loqopj" path="res://Fonts/WenQuanDianZhenZhengHei-1.ttf" id="7_ao7rs"]
+[ext_resource type="Texture2D" uid="uid://brtxymjhomfrl" path="res://Resource/texture/P_Point.png" id="8_yoqfc"]
+[ext_resource type="Texture2D" uid="uid://wnvy23lfk22n" path="res://Resource/texture/Point.png" id="9_pi78h"]
+[ext_resource type="FontFile" uid="uid://bfulrtgnpdxb5" path="res://Fonts/进度条文本.tres" id="10_jjw6g"]
+[ext_resource type="Texture2D" uid="uid://wnltn64cscho" path="res://Resource/texture/生命心值.png" id="11_ay1aa"]
+[ext_resource type="Texture2D" uid="uid://db27h2qfhkxhi" path="res://Resource/texture/符卡值.png" id="12_jprf8"]
+[ext_resource type="Script" uid="uid://cruwj1sr8sbgp" path="res://GameOverWindow.gd" id="13_i45aj"]
+[ext_resource type="StyleBox" uid="uid://kcop8uhva3ey" path="res://GameWindowColorScheme.tres" id="14_c5vvk"]
+[ext_resource type="Script" uid="uid://cvuca700e87rp" path="res://MainMenu.gd" id="15_rgt53"]
+[ext_resource type="FontFile" uid="uid://c44n1uvn6kupv" path="res://Fonts/VonwaonBitmap-12px.ttf" id="16_wknsi"]
+[ext_resource type="FontFile" uid="uid://cqaf3f2x2dgg8" path="res://Fonts/VonwaonBitmap-16px.ttf" id="17_k48nr"]
+[ext_resource type="Shader" uid="uid://cngg3mb3wax7e" path="res://UI/difficult_panel.gdshader" id="18_x4f0b"]
+[ext_resource type="StyleBox" uid="uid://h25cxnkvn8hj" path="res://UI/difficult_panel.tres" id="19_kr8b8"]
+[ext_resource type="Script" uid="uid://coyetqimjx6rf" path="res://difficult_panel.gd" id="20_ux15e"]
+[ext_resource type="PackedScene" uid="uid://d2x86ewor0p62" path="res://UI/UI.tscn" id="21_nrgpc"]
+[ext_resource type="AudioStream" uid="uid://c0culew7ap6gs" path="res://Audio/SE/toggle_003.wav" id="22_wvywc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i56db"]
 bg_color = Color(0.192157, 0.666667, 0.772549, 1)
 
 [sub_resource type="FontVariation" id="FontVariation_xe6sr"]
-base_font = ExtResource("13")
+base_font = ExtResource("7_ao7rs")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ke8b8"]
 bg_color = Color(0.129412, 0.658824, 0.827451, 1)
@@ -39,13 +39,13 @@ bg_color = Color(0.443137, 0.768627, 0.909804, 1)
 bg_color = Color(0.192157, 0.666667, 0.772549, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_536y6"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 76
 outline_size = 10
 outline_color = Color(0, 0.839216, 0.964706, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_hn2q6"]
-font = ExtResource("16_8uqvo")
+font = ExtResource("16_wknsi")
 font_size = 24
 font_color = Color(0.513726, 0.972549, 1, 1)
 
@@ -65,7 +65,7 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="LabelSettings" id="LabelSettings_nebbg"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 48
 outline_size = 8
 outline_color = Color(1, 0.152941, 0.0470588, 1)
@@ -73,11 +73,11 @@ shadow_size = 10
 shadow_color = Color(0, 0, 0, 0.698039)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_d50pq"]
-shader = ExtResource("18_sl2nt")
+shader = ExtResource("18_x4f0b")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_wmw1a"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 48
 font_color = Color(0, 0.760784, 0.560784, 1)
 outline_size = 4
@@ -86,15 +86,15 @@ shadow_size = 6
 shadow_color = Color(0, 0, 0, 0.439216)
 
 [sub_resource type="LabelSettings" id="LabelSettings_qtcyd"]
-font = ExtResource("14_vor10")
+font = ExtResource("17_k48nr")
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_axj0y"]
-shader = ExtResource("18_sl2nt")
+shader = ExtResource("18_x4f0b")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_iovxw"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 48
 font_color = Color(0, 0.713726, 0.901961, 1)
 outline_size = 4
@@ -103,11 +103,11 @@ shadow_size = 6
 shadow_color = Color(0, 0, 0, 0.439216)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5t5ys"]
-shader = ExtResource("18_sl2nt")
+shader = ExtResource("18_x4f0b")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_b7rjf"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 48
 font_color = Color(0.92549, 0.541176, 0, 1)
 outline_size = 4
@@ -116,11 +116,11 @@ shadow_size = 6
 shadow_color = Color(0, 0, 0, 0.439216)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_406pp"]
-shader = ExtResource("18_sl2nt")
+shader = ExtResource("18_x4f0b")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_4t204"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 48
 font_color = Color(0.92549, 0, 0, 1)
 outline_size = 4
@@ -129,11 +129,11 @@ shadow_size = 6
 shadow_color = Color(0, 0, 0, 0.439216)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4e33h"]
-shader = ExtResource("18_sl2nt")
+shader = ExtResource("18_x4f0b")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_wwbk8"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 48
 font_color = Color(0.486275, 0.631373, 1, 1)
 outline_size = 4
@@ -142,11 +142,11 @@ shadow_size = 6
 shadow_color = Color(0, 0, 0, 0.439216)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yloco"]
-shader = ExtResource("18_sl2nt")
+shader = ExtResource("18_x4f0b")
 shader_parameter/alpha = 0.5
 
 [sub_resource type="LabelSettings" id="LabelSettings_pmvka"]
-font = ExtResource("13")
+font = ExtResource("7_ao7rs")
 font_size = 48
 font_color = Color(0.756863, 0.513726, 1, 1)
 outline_size = 4
@@ -155,13 +155,13 @@ shadow_size = 6
 shadow_color = Color(0, 0, 0, 0.439216)
 
 [node name="TouhouDanmakuTemplate" type="Node2D"]
-script = ExtResource("1_d073v")
+script = ExtResource("1_pix85")
 
 [node name="GameWindow" type="Panel" parent="."]
 offset_right = 800.0
 offset_bottom = 600.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_i56db")
-script = ExtResource("11")
+script = ExtResource("2_xlc4h")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -184,7 +184,7 @@ offset_top = 19.0
 offset_right = 771.0
 offset_bottom = 579.0
 border_color = Color(0.0705882, 0.254902, 0.968627, 1)
-script = ExtResource("9")
+script = ExtResource("3_fl1y3")
 
 [node name="历史得分" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
@@ -192,7 +192,7 @@ offset_left = 79.0
 offset_top = 10.0
 offset_right = 179.0
 offset_bottom = 43.0
-theme_override_fonts/font = ExtResource("7")
+theme_override_fonts/font = ExtResource("4_3smgk")
 text = "历史得分"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -203,7 +203,7 @@ offset_left = 79.0
 offset_top = 72.0
 offset_right = 179.0
 offset_bottom = 105.0
-theme_override_fonts/font = ExtResource("7")
+theme_override_fonts/font = ExtResource("4_3smgk")
 text = "当前分数"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -214,7 +214,7 @@ offset_left = 37.0
 offset_top = 105.0
 offset_right = 219.0
 offset_bottom = 134.0
-theme_override_fonts/font = ExtResource("4_avm47")
+theme_override_fonts/font = ExtResource("5_ce7jt")
 text = "10000"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -225,7 +225,7 @@ offset_left = 37.0
 offset_top = 43.0
 offset_right = 219.0
 offset_bottom = 72.0
-theme_override_fonts/font = ExtResource("4_avm47")
+theme_override_fonts/font = ExtResource("5_ce7jt")
 text = "10000"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -236,7 +236,7 @@ offset_left = 9.0
 offset_top = 154.0
 offset_right = 45.0
 offset_bottom = 178.0
-theme_override_fonts/font = ExtResource("4")
+theme_override_fonts/font = ExtResource("6_kiaa0")
 text = "残机"
 
 [node name="符卡" type="Label" parent="GameWindow/NumberPanel"]
@@ -245,7 +245,7 @@ offset_left = 9.0
 offset_top = 180.0
 offset_right = 45.0
 offset_bottom = 204.0
-theme_override_fonts/font = ExtResource("4")
+theme_override_fonts/font = ExtResource("6_kiaa0")
 text = "符卡"
 
 [node name="灵力" type="Label" parent="GameWindow/NumberPanel"]
@@ -264,7 +264,7 @@ offset_left = 9.0
 offset_top = 229.0
 offset_right = 32.0
 offset_bottom = 252.0
-texture = ExtResource("6_3fn0i")
+texture = ExtResource("8_yoqfc")
 
 [node name="点图标" type="TextureRect" parent="GameWindow/NumberPanel"]
 layout_mode = 0
@@ -272,7 +272,7 @@ offset_left = 9.0
 offset_top = 255.0
 offset_right = 32.0
 offset_bottom = 278.0
-texture = ExtResource("5")
+texture = ExtResource("9_pi78h")
 
 [node name="得点" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
@@ -280,7 +280,7 @@ offset_left = 36.0
 offset_top = 255.0
 offset_right = 68.0
 offset_bottom = 279.0
-theme_override_fonts/font = ExtResource("13")
+theme_override_fonts/font = ExtResource("7_ao7rs")
 theme_override_font_sizes/font_size = 16
 text = "得点"
 
@@ -290,7 +290,7 @@ offset_left = 79.0
 offset_top = 255.0
 offset_right = 115.0
 offset_bottom = 279.0
-theme_override_fonts/font = ExtResource("4_avm47")
+theme_override_fonts/font = ExtResource("5_ce7jt")
 text = "0"
 
 [node name="擦弹" type="Label" parent="GameWindow/NumberPanel"]
@@ -299,7 +299,7 @@ offset_left = 36.0
 offset_top = 279.0
 offset_right = 68.0
 offset_bottom = 303.0
-theme_override_fonts/font = ExtResource("4")
+theme_override_fonts/font = ExtResource("6_kiaa0")
 text = "擦弹"
 
 [node name="Graze" type="Label" parent="GameWindow/NumberPanel"]
@@ -308,7 +308,7 @@ offset_left = 79.0
 offset_top = 279.0
 offset_right = 115.0
 offset_bottom = 303.0
-theme_override_fonts/font = ExtResource("4_avm47")
+theme_override_fonts/font = ExtResource("5_ce7jt")
 text = "0"
 
 [node name="FireBar" type="ProgressBar" parent="GameWindow/NumberPanel"]
@@ -326,7 +326,7 @@ layout_mode = 0
 offset_left = 2.0
 offset_right = 62.0
 offset_bottom = 24.0
-theme_override_fonts/font = ExtResource("1")
+theme_override_fonts/font = ExtResource("10_jjw6g")
 text = "MAX"
 
 [node name="LifeGrid" type="GridContainer" parent="GameWindow/NumberPanel"]
@@ -342,7 +342,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life2" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -350,7 +350,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life3" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -358,7 +358,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life4" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -366,7 +366,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life5" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -374,7 +374,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life6" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -382,7 +382,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life7" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -390,7 +390,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life8" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -398,7 +398,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life9" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -406,7 +406,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="Life10" type="TextureRect" parent="GameWindow/NumberPanel/LifeGrid"]
@@ -414,7 +414,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
-texture = ExtResource("8")
+texture = ExtResource("11_ay1aa")
 stretch_mode = 5
 
 [node name="BombGrid" type="GridContainer" parent="GameWindow/NumberPanel"]
@@ -427,44 +427,44 @@ columns = 10
 
 [node name="Bomb1" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb2" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb3" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 stretch_mode = 5
 
 [node name="Bomb4" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb5" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb6" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb7" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb8" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb9" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="Bomb10" type="TextureRect" parent="GameWindow/NumberPanel/BombGrid"]
 layout_mode = 2
-texture = ExtResource("10")
+texture = ExtResource("12_jprf8")
 
 [node name="TimeLeft" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
@@ -472,7 +472,7 @@ offset_left = -88.0
 offset_top = -10.0
 offset_right = -7.0
 offset_bottom = 14.0
-theme_override_fonts/font = ExtResource("4_avm47")
+theme_override_fonts/font = ExtResource("5_ce7jt")
 theme_override_font_sizes/font_size = 16
 horizontal_alignment = 2
 vertical_alignment = 1
@@ -482,7 +482,7 @@ visible = false
 offset_right = 800.0
 offset_bottom = 600.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_7wbd7")
-script = ExtResource("14")
+script = ExtResource("13_i45aj")
 
 [node name="Label" type="Label" parent="GameOverWindow"]
 layout_mode = 0
@@ -490,7 +490,7 @@ offset_left = 192.0
 offset_top = 95.0
 offset_right = 612.0
 offset_bottom = 187.0
-theme_override_fonts/font = ExtResource("13")
+theme_override_fonts/font = ExtResource("7_ao7rs")
 theme_override_font_sizes/font_size = 70
 text = "游戏结束界面"
 
@@ -502,8 +502,8 @@ offset_bottom = 600.0
 [node name="MainMenu" type="Panel" parent="."]
 offset_right = 800.0
 offset_bottom = 600.0
-theme_override_styles/panel = ExtResource("13_0rpnd")
-script = ExtResource("14_otkbh")
+theme_override_styles/panel = ExtResource("14_c5vvk")
+script = ExtResource("15_rgt53")
 metadata/_edit_lock_ = true
 
 [node name="标题" type="Control" parent="MainMenu"]
@@ -559,7 +559,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -589,7 +589,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -619,7 +619,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -649,7 +649,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -679,7 +679,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -709,7 +709,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -739,7 +739,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -769,7 +769,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -799,7 +799,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -829,7 +829,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.909804, 0.780392, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_fonts/font = ExtResource("14_vor10")
+theme_override_fonts/font = ExtResource("17_k48nr")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_o4ptj")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
@@ -896,8 +896,8 @@ focus_neighbor_bottom = NodePath("../Normal")
 focus_next = NodePath("../Normal")
 focus_previous = NodePath("../Lunatic")
 focus_mode = 2
-theme_override_styles/panel = ExtResource("18_gvgl1")
-script = ExtResource("19_dftaq")
+theme_override_styles/panel = ExtResource("19_kr8b8")
+script = ExtResource("20_ux15e")
 
 [node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Easy"]
 use_parent_material = true
@@ -927,8 +927,8 @@ material = SubResource("ShaderMaterial_axj0y")
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
 focus_mode = 2
-theme_override_styles/panel = ExtResource("18_gvgl1")
-script = ExtResource("19_dftaq")
+theme_override_styles/panel = ExtResource("19_kr8b8")
+script = ExtResource("20_ux15e")
 
 [node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Normal"]
 use_parent_material = true
@@ -958,8 +958,8 @@ material = SubResource("ShaderMaterial_5t5ys")
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
 focus_mode = 2
-theme_override_styles/panel = ExtResource("18_gvgl1")
-script = ExtResource("19_dftaq")
+theme_override_styles/panel = ExtResource("19_kr8b8")
+script = ExtResource("20_ux15e")
 
 [node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Hard"]
 use_parent_material = true
@@ -993,8 +993,8 @@ focus_neighbor_bottom = NodePath("../Easy")
 focus_next = NodePath("../Easy")
 focus_previous = NodePath("../Hard")
 focus_mode = 2
-theme_override_styles/panel = ExtResource("18_gvgl1")
-script = ExtResource("19_dftaq")
+theme_override_styles/panel = ExtResource("19_kr8b8")
+script = ExtResource("20_ux15e")
 
 [node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Lunatic"]
 use_parent_material = true
@@ -1029,8 +1029,8 @@ focus_neighbor_bottom = NodePath("../Phatom")
 focus_next = NodePath("../Phatom")
 focus_previous = NodePath("../Phatom")
 focus_mode = 2
-theme_override_styles/panel = ExtResource("18_gvgl1")
-script = ExtResource("19_dftaq")
+theme_override_styles/panel = ExtResource("19_kr8b8")
+script = ExtResource("20_ux15e")
 
 [node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Extra"]
 use_parent_material = true
@@ -1065,8 +1065,8 @@ focus_neighbor_bottom = NodePath("../Extra")
 focus_next = NodePath("../Extra")
 focus_previous = NodePath("../Extra")
 focus_mode = 2
-theme_override_styles/panel = ExtResource("18_gvgl1")
-script = ExtResource("19_dftaq")
+theme_override_styles/panel = ExtResource("19_kr8b8")
+script = ExtResource("20_ux15e")
 
 [node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Phatom"]
 use_parent_material = true
@@ -1097,19 +1097,19 @@ offset_left = 648.0
 offset_top = 563.0
 offset_right = 799.0
 offset_bottom = 600.0
-theme_override_fonts/font = ExtResource("13")
+theme_override_fonts/font = ExtResource("7_ao7rs")
 theme_override_font_sizes/font_size = 26
 text = "FPS:60"
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="UI" parent="." instance=ExtResource("6")]
+[node name="UI" parent="." instance=ExtResource("21_nrgpc")]
 visible = false
 
 [node name="Audio" type="Node" parent="."]
 
 [node name="ToggleButton" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("17_067iu")
+stream = ExtResource("22_wvywc")
 volume_db = -10.242
 
 [connection signal="focus_exited" from="MainMenu/Buttons/GameStart" to="." method="_on_buttons_toggle"]

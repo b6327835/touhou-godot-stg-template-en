@@ -3,7 +3,7 @@
 
 # File Names
 # ----------
-东方弹幕绘.tscn = TouhouDanmakuDrawing.tscn
+东方弹幕绘.tscn = TouhouDanmakuTemplate.tscn
 炸弹 = Bomb
 掉落物 = Items
 弹幕相关 = DanmakuRelated
@@ -50,7 +50,7 @@ GameWindow配色.tres = GameWindowColorScheme.tres
 - main.gd
 - main.gd.uid
 - project.godot
-- 东方弹幕绘.tscn (TouhouDanmakuDrawing.tscn)
+- 东方弹幕绘.tscn (TouhouDanmakuTemplate.tscn)
 - 更新档函数表.txt (UpdateFunctionTable.txt)
 - 更新档生成器.py (UpdateGenerator.py)
 
@@ -188,12 +188,12 @@ GameWindow配色.tres = GameWindowColorScheme.tres
 - 子弹碰撞/ (BulletCollision/)
   - 书弹.tres (BookBullet.tres)
   - 判定线.tres (HitboxLine.tres)
-  - 小玉.tres (SmallOrb.tres)
-  - 中玉.tres (MediumOrb.tres)
-  - 方玉.tres (SquareOrb.tres)
+  - 小玉.tres (SmallBullet.tres)
+  - 中玉.tres (MediumBullet.tres)
+  - 方玉.tres (SquareBullet.tres)
   - 星弹.tres (StarBullet.tres)
   - 棱弹.tres (PrismBullet.tres)
-  - 米玉.tres (RiceOrb.tres)
+  - 米玉.tres (RiceBullet.tres)
   - 激光.tres (Laser.tres)
   - 扳手弹.tres (WrenchBullet.tres)
   - 雏翼弹.tres (WingBullet.tres)
@@ -222,8 +222,8 @@ GameWindow配色.tres = GameWindowColorScheme.tres
   - 基础符卡.gd (BasicSpellCard.gd)
   - 基础符卡.gd.uid (BasicSpellCard.gd.uid)
   - 基础符卡.tscn (BasicSpellCard.tscn)
-  - 方块一非.tscn (SquareOneNon.tscn)
-  - 方块二非.tscn (SquareTwoNon.tscn)
+  - 方块一非.tscn (SquareNon1.tscn)
+  - 方块二非.tscn (SquareNon2.tscn)
   - 方符：摇曳方阵.tscn (Square:WavingFormation.tscn)
   - 方阵：完美立方体.tscn (Formation:PerfectCube.tscn)
   - 棱符：天棱地方.tscn (Prism:HeavenEarthPrism.tscn)
