@@ -2,6 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bdnkbxlnulul5" path="res://DanmakuRelated/DanmakuManager.gd" id="1_ia073"]
 
-[node name="弹幕管理器" type="Node2D"]
+[node name="DanmakuManager" type="Node2D"]
 z_index = 7
 script = ExtResource("1_ia073")

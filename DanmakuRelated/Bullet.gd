@@ -210,7 +210,9 @@ func get_collision_shape():
 	return collision_shape
 
 func _initlize():
-	pass
+	# Initialize bullet position from real_position
+	position = real_position
+	run_frame = 0
 
 func detect_collsion_with(bul_trans,obj):
 	if is_instance_valid(obj):

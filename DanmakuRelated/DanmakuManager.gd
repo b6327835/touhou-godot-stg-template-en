@@ -44,6 +44,7 @@ func _process(delta):
 
 #将一个新的子弹添加进管理器
 func create_bullet_bul(bullet):
+	#bullet._initialize()
 	bullet._initlize()
 	bullets.append(bullet)
 

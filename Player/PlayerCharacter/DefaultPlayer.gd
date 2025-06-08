@@ -9,7 +9,7 @@ const DEFAULTSELFPOSITION = Vector2(240,480)
 @export var move_speed = 4.0
 @export var low_speed_speed = 2
 @export var unbreakable = false
-@export var bomb_name = "默认炸弹"
+@export var bomb_name = "DefaultBomb"
 var svelocity = Vector2.ZERO
 var unbreakable_anim_time = 2.0
 var unbreakable_bomb_time = 1.0
@@ -25,8 +25,7 @@ func _ready():
 	for node in $Shooter.get_children():
 		node.add_bullet_group(bullet_group)
 
-func _on_hit_by(obj):
-	#自机被击中时调用的方法
+func _on_hit_by(obj):	#自机被击中时调用的方法
 	#obj代表击中自机的对象
 	if !unbreakable:
 		STGSYS.decrease_life()
@@ -35,7 +34,7 @@ func _on_hit_by(obj):
 		position = DEFAULTSELFPOSITION
 		unbreakable = true
 		$UnbreakableAnimTimer.start()
-		$AnimationPlayer.play("受击效果")
+		$AnimationPlayer.play("HitEffect")
 
 func bomb_use():
 	#使用炸弹时开启无敌
@@ -70,11 +69,11 @@ func shoot():
 	var power = STGSYS.power
 	#判断火力，不同火力阶段开启不同数量的发弹点
 	if power >= 0:
-		$"Shooter/自机发弹点2".enable_shoot_bullet = true
+		$"Shooter/PlayerBulletSpawner2".enable_shoot_bullet = true
 	if power >= 60:
-		$"Shooter/自机发弹点".enable_shoot_bullet = true
+		$"Shooter/PlayerBulletSpawner".enable_shoot_bullet = true
 	if power >= 120:
-		$"Shooter/自机发弹点3".enable_shoot_bullet = true
+		$"Shooter/PlayerBulletSpawner3".enable_shoot_bullet = true
 
 func move(delta): 
 	#用于处理玩家移动的动作

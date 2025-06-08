@@ -216,7 +216,8 @@ cycle = true
 start_sec = 0.01
 end_sec = 10.0
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 6
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
@@ -229,7 +230,8 @@ cycle = true
 start_sec = 0.01
 end_sec = 10.0
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 6
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
@@ -242,7 +244,8 @@ cycle = true
 start_sec = 0.01
 end_sec = 10.0
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 6
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
@@ -255,7 +258,8 @@ cycle = true
 start_sec = 0.01
 end_sec = 10.0
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 6
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
@@ -268,7 +272,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -279,7 +284,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -290,7 +296,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -301,7 +308,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -312,7 +320,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -323,7 +332,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -334,7 +344,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -345,7 +356,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -356,7 +368,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -367,7 +380,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -378,7 +392,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -389,7 +404,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
@@ -400,7 +416,8 @@ script = SubResource("GDScript_dei3l")
 start_sec = 0.01
 never_end = true
 spawn_bullet_type = "棱弹"
-spawn_bullet_color = 7
+spawn_bullet_color = 1
+
 way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20

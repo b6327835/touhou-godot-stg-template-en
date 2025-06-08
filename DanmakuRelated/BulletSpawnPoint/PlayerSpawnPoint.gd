@@ -4,6 +4,7 @@ func _on_ready():
 	bullet_manager_name = "PlayerBulletLayer"
 	spawn_bullet_type = "SmallBullet"
 	spawn_bullet_owner = "self"
+	spawn_bullet_color = 0
 	way_rotation = -180
 
 func bullet_spawn_logic():
