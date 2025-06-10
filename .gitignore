@@ -6,6 +6,7 @@ export.cfg
 export_presets.cfg
 *.translation
 *.uid
+*.import
 
 # Mono-specific ignores
 .mono/
