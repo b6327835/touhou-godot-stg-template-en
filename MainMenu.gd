@@ -2,7 +2,7 @@ extends Panel
 
 @onready var game_start_button = $Buttons/GameStart
 @onready var game_window = $"../GameWindow"
-@onready var hardpanel_container = $LevelChose/HardChose/HardPanels
+@onready var hardpanel_container = $LevelSelect/DifficultySelect/DifficultyPanels
 
 func _ready():
 	game_start_button.grab_focus()

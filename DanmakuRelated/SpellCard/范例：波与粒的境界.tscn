@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d3dhei3xytom4" path="res://DanmakuRelated/SpellCard/基础符卡.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://bqaimmawxtyji" path="res://DanmakuRelated/SpellCard/SpellCardSpawnPoint/范例：波与粒的境界.tscn" id="2"]
-[ext_resource type="Script" uid="uid://yxoltym6f1v1" path="res://DanmakuRelated/SpellCard/SpawnPointGroup/相对发弹点组.gd" id="3"]
+[ext_resource type="Script" uid="uid://yxoltym6f1v1" path="res://DanmakuRelated/SpellCard/SpawnPointGroup/RelativeSpawnPointGroup.gd" id="3"]
 
 [sub_resource type="GDScript" id="1"]
 script/source = "extends SpellCard

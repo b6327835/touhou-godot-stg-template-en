@@ -10,7 +10,7 @@ metadata/__load_path__ = "res://战斗系统/弹幕相关/符卡/基础符卡.ts
 metadata/__load_path__ = "res://战斗系统/弹幕相关/符卡/角色符卡/小雨/犹格索托斯.gd"
 
 [sub_resource type="Resource" id="Resource_lswh1"]
-metadata/__load_path__ = "res://战斗系统/弹幕相关/符卡/发弹点组/相对发弹点组.gd"
+metadata/__load_path__ = "res://DanmakuRelated/SpellCard/SpawnPointGroup/RelativeSpawnPointGroup.gd"
 
 [sub_resource type="GDScript" id="GDScript_cbfe0"]
 resource_name = "犹格索托斯发弹点"

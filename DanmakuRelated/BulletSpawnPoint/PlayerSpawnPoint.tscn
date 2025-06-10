@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://dflgl0nlmoc1v"]
 
-[ext_resource type="Script" uid="uid://bsqmhlv8vdcko" path="res://DanmakuRelated/BulletSpawnPoint/自机发弹点.gd" id="1"]
+[ext_resource type="Script" uid="uid://bsqmhlv8vdcko" path="res://DanmakuRelated/BulletSpawnPoint/PlayerSpawnPoint.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/BulletSpawnPoint.tscn" id="2"]
 
 [node name="自机发弹点" instance=ExtResource("2")]
 script = ExtResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="6"]

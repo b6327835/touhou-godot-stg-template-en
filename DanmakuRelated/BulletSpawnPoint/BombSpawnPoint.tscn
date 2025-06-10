@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cdeceostpnv30"]
 
 [ext_resource type="PackedScene" uid="uid://cv6rw3rasv4h8" path="res://DanmakuRelated/BulletSpawnPoint.tscn" id="1"]
-[ext_resource type="Script" uid="uid://bkennbtym1ga3" path="res://DanmakuRelated/BulletSpawnPoint/炸弹发弹点.gd" id="2_prdun"]
+[ext_resource type="Script" uid="uid://bkennbtym1ga3" path="res://DanmakuRelated/BulletSpawnPoint/BombSpawnPoint.gd" id="2_prdun"]
 
 [node name="炸弹发弹点" instance=ExtResource("1")]
 script = ExtResource("2_prdun")
@@ -23,7 +23,7 @@ bullet_life = 0
 bullet_speed = 3.0
 bullet_aspeed = 0.0
 bullet_aspeed_rotation = 0.0
-spawn_bullet_type = "小玉"
+spawn_bullet_type = "SmallBullet"
 spawn_bullet_color = 0
 spawn_bullet_owner = "none"
 bullet_scale = Vector2(1, 1)

@@ -6,22 +6,22 @@
 [ext_resource type="FontFile" path="res://Fonts/ScoreTitle.tres" id="4_3smgk"]
 [ext_resource type="FontFile" path="res://Fonts/number.tres" id="5_ce7jt"]
 [ext_resource type="FontFile" path="res://Fonts/Title.tres" id="6_kiaa0"]
-[ext_resource type="FontFile" uid="uid://c5o8vt8loqopj" path="res://Fonts/WenQuanDianZhenZhengHei-1.ttf" id="7_ao7rs"]
-[ext_resource type="Texture2D" uid="uid://brtxymjhomfrl" path="res://Resource/texture/P_Point.png" id="8_yoqfc"]
-[ext_resource type="Texture2D" uid="uid://wnvy23lfk22n" path="res://Resource/texture/Point.png" id="9_pi78h"]
+[ext_resource type="FontFile" uid="uid://bkxo8ybr8cwl3" path="res://Fonts/WenQuanDianZhenZhengHei-1.ttf" id="7_ao7rs"]
+[ext_resource type="Texture2D" uid="uid://c4nwbmff2l8ix" path="res://Resource/texture/P_Point.png" id="8_yoqfc"]
+[ext_resource type="Texture2D" uid="uid://c2d5q0vqotfnx" path="res://Resource/texture/Point.png" id="9_pi78h"]
 [ext_resource type="FontFile" uid="uid://bfulrtgnpdxb5" path="res://Fonts/ProgressBarText.tres" id="10_jjw6g"]
-[ext_resource type="Texture2D" uid="uid://wnltn64cscho" path="res://Resource/texture/LifeHeartValue.png" id="11_ay1aa"]
-[ext_resource type="Texture2D" uid="uid://db27h2qfhkxhi" path="res://Resource/texture/SpellCardValue.png" id="12_jprf8"]
+[ext_resource type="Texture2D" uid="uid://cyng72io3ax57" path="res://Resource/texture/LifeHeartValue.png" id="11_ay1aa"]
+[ext_resource type="Texture2D" uid="uid://cf14q3rab7r86" path="res://Resource/texture/SpellCardValue.png" id="12_jprf8"]
 [ext_resource type="Script" uid="uid://cruwj1sr8sbgp" path="res://GameOverWindow.gd" id="13_i45aj"]
 [ext_resource type="StyleBox" uid="uid://kcop8uhva3ey" path="res://GameWindowColorScheme.tres" id="14_c5vvk"]
 [ext_resource type="Script" uid="uid://cvuca700e87rp" path="res://MainMenu.gd" id="15_rgt53"]
-[ext_resource type="FontFile" uid="uid://c44n1uvn6kupv" path="res://Fonts/VonwaonBitmap-12px.ttf" id="16_wknsi"]
-[ext_resource type="FontFile" uid="uid://cqaf3f2x2dgg8" path="res://Fonts/VonwaonBitmap-16px.ttf" id="17_k48nr"]
+[ext_resource type="FontFile" uid="uid://b5oqosr0e8bsw" path="res://Fonts/VonwaonBitmap-12px.ttf" id="16_wknsi"]
+[ext_resource type="FontFile" uid="uid://bnjxrd3eythry" path="res://Fonts/VonwaonBitmap-16px.ttf" id="17_k48nr"]
 [ext_resource type="Shader" uid="uid://cngg3mb3wax7e" path="res://UI/difficult_panel.gdshader" id="18_x4f0b"]
 [ext_resource type="StyleBox" uid="uid://h25cxnkvn8hj" path="res://UI/difficult_panel.tres" id="19_kr8b8"]
 [ext_resource type="Script" uid="uid://coyetqimjx6rf" path="res://difficult_panel.gd" id="20_ux15e"]
 [ext_resource type="PackedScene" uid="uid://d2x86ewor0p62" path="res://UI/UI.tscn" id="21_nrgpc"]
-[ext_resource type="AudioStream" uid="uid://c0culew7ap6gs" path="res://Audio/SE/toggle_003.wav" id="22_wvywc"]
+[ext_resource type="AudioStream" uid="uid://dsfcwsgx0q54l" path="res://Audio/SE/toggle_003.wav" id="22_wvywc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i56db"]
 bg_color = Color(0.192157, 0.666667, 0.772549, 1)
@@ -40,7 +40,7 @@ bg_color = Color(0.192157, 0.666667, 0.772549, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_536y6"]
 font = ExtResource("7_ao7rs")
-font_size = 76
+font_size = 62
 outline_size = 10
 outline_color = Color(0, 0.839216, 0.964706, 1)
 
@@ -186,25 +186,25 @@ offset_bottom = 579.0
 border_color = Color(0.0705882, 0.254902, 0.968627, 1)
 script = ExtResource("3_fl1y3")
 
-[node name="历史得分" type="Label" parent="GameWindow/NumberPanel"]
+[node name="ScoreHistory" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 79.0
 offset_top = 10.0
 offset_right = 179.0
 offset_bottom = 43.0
 theme_override_fonts/font = ExtResource("4_3smgk")
-text = "历史得分"
+text = "Score History"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="当前得分" type="Label" parent="GameWindow/NumberPanel"]
+[node name="CurrentScore" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 79.0
 offset_top = 72.0
 offset_right = 179.0
 offset_bottom = 105.0
 theme_override_fonts/font = ExtResource("4_3smgk")
-text = "当前分数"
+text = "Current Score"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -230,25 +230,25 @@ text = "10000"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="残机" type="Label" parent="GameWindow/NumberPanel"]
+[node name="LifeLabel" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 154.0
 offset_right = 45.0
 offset_bottom = 178.0
 theme_override_fonts/font = ExtResource("6_kiaa0")
-text = "残机"
+text = "Life"
 
-[node name="符卡" type="Label" parent="GameWindow/NumberPanel"]
+[node name="BombLabel" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 180.0
 offset_right = 45.0
 offset_bottom = 204.0
 theme_override_fonts/font = ExtResource("6_kiaa0")
-text = "符卡"
+text = "Bomb"
 
-[node name="灵力" type="Label" parent="GameWindow/NumberPanel"]
+[node name="PowerLabel" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 36.0
 offset_top = 229.0
@@ -256,9 +256,9 @@ offset_right = 68.0
 offset_bottom = 253.0
 theme_override_fonts/font = SubResource("FontVariation_xe6sr")
 theme_override_font_sizes/font_size = 16
-text = "灵力"
+text = "Power"
 
-[node name="P点图标" type="TextureRect" parent="GameWindow/NumberPanel"]
+[node name="PPointIcon" type="TextureRect" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 229.0
@@ -266,7 +266,7 @@ offset_right = 32.0
 offset_bottom = 252.0
 texture = ExtResource("8_yoqfc")
 
-[node name="点图标" type="TextureRect" parent="GameWindow/NumberPanel"]
+[node name="PointIcon" type="TextureRect" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 255.0
@@ -274,7 +274,7 @@ offset_right = 32.0
 offset_bottom = 278.0
 texture = ExtResource("9_pi78h")
 
-[node name="得点" type="Label" parent="GameWindow/NumberPanel"]
+[node name="PointLabel" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 36.0
 offset_top = 255.0
@@ -282,7 +282,7 @@ offset_right = 68.0
 offset_bottom = 279.0
 theme_override_fonts/font = ExtResource("7_ao7rs")
 theme_override_font_sizes/font_size = 16
-text = "得点"
+text = "Point"
 
 [node name="Point" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
@@ -293,14 +293,14 @@ offset_bottom = 279.0
 theme_override_fonts/font = ExtResource("5_ce7jt")
 text = "0"
 
-[node name="擦弹" type="Label" parent="GameWindow/NumberPanel"]
+[node name="GrazeLabel" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
 offset_left = 36.0
 offset_top = 279.0
 offset_right = 68.0
 offset_bottom = 303.0
 theme_override_fonts/font = ExtResource("6_kiaa0")
-text = "擦弹"
+text = "Graze"
 
 [node name="Graze" type="Label" parent="GameWindow/NumberPanel"]
 layout_mode = 0
@@ -492,7 +492,7 @@ offset_right = 612.0
 offset_bottom = 187.0
 theme_override_fonts/font = ExtResource("7_ao7rs")
 theme_override_font_sizes/font_size = 70
-text = "游戏结束界面"
+text = "Game Over"
 
 [node name="PauseMenu" type="Panel" parent="."]
 visible = false
@@ -506,23 +506,23 @@ theme_override_styles/panel = ExtResource("14_c5vvk")
 script = ExtResource("15_rgt53")
 metadata/_edit_lock_ = true
 
-[node name="标题" type="Control" parent="MainMenu"]
+[node name="TitleContainer" type="Control" parent="MainMenu"]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="主标题" type="Label" parent="MainMenu/标题"]
+[node name="MainTitle" type="Label" parent="MainMenu/TitleContainer"]
 layout_mode = 0
 offset_left = 48.0
 offset_top = 33.0
 offset_right = 428.0
 offset_bottom = 138.0
-text = "东方弹幕绘"
+text = "Touhou Danmaku Template"
 label_settings = SubResource("LabelSettings_536y6")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="副标题" type="Label" parent="MainMenu/标题"]
+[node name="SubTitle" type="Label" parent="MainMenu/TitleContainer"]
 layout_mode = 0
 offset_left = 173.0
 offset_top = 130.0
@@ -566,7 +566,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "开始游戏"
+text = "Start Game"
 
 [node name="ExtraStart" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -596,7 +596,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "特殊关卡"
+text = "Extra Stage"
 
 [node name="Practice" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -626,7 +626,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "练习模式"
+text = "Practice Mode"
 
 [node name="SpellCard" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -656,7 +656,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "符卡练习"
+text = "Spell Practice"
 
 [node name="Replay" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -686,7 +686,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "回放模式"
+text = "Replay Mode"
 
 [node name="PlayerData" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -716,7 +716,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "玩家排名"
+text = "Player Ranking"
 
 [node name="Music Room" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -746,7 +746,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "音乐欣赏"
+text = "Music Room"
 
 [node name="Option" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -776,7 +776,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "设置"
+text = "Options"
 
 [node name="Manual" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -806,7 +806,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "游玩手册"
+text = "Manual"
 
 [node name="Quit" type="Button" parent="MainMenu/Buttons"]
 layout_mode = 0
@@ -836,10 +836,10 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_j7kpd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_xk6bd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wspwg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_odvdl")
-text = "退出游戏
+text = "Quit
 "
 
-[node name="LevelChose" type="Control" parent="MainMenu"]
+[node name="LevelSelect" type="Control" parent="MainMenu"]
 visible = false
 layout_mode = 3
 anchors_preset = 0
@@ -847,13 +847,13 @@ offset_right = 800.0
 offset_bottom = 600.0
 metadata/_edit_lock_ = true
 
-[node name="HardChose" type="Control" parent="MainMenu/LevelChose"]
+[node name="DifficultySelect" type="Control" parent="MainMenu/LevelSelect"]
 anchors_preset = 0
 offset_right = 800.0
 offset_bottom = 600.0
 metadata/_edit_lock_ = true
 
-[node name="ChoseHard" type="Label" parent="MainMenu/LevelChose/HardChose"]
+[node name="DifficultySelection" type="Label" parent="MainMenu/LevelSelect/DifficultySelect"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -866,12 +866,12 @@ offset_right = 147.5
 offset_bottom = -217.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "难度选择"
+text = "Difficulty Selection"
 label_settings = SubResource("LabelSettings_nebbg")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HardPanels" type="VBoxContainer" parent="MainMenu/LevelChose/HardChose"]
+[node name="DifficultyPanels" type="VBoxContainer" parent="MainMenu/LevelSelect/DifficultySelect"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -887,7 +887,7 @@ grow_vertical = 2
 theme_override_constants/separation = 10
 metadata/_edit_lock_ = true
 
-[node name="Easy" type="Panel" parent="MainMenu/LevelChose/HardChose/HardPanels"]
+[node name="Easy" type="Panel" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels"]
 material = SubResource("ShaderMaterial_d50pq")
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
@@ -899,7 +899,7 @@ focus_mode = 2
 theme_override_styles/panel = ExtResource("19_kr8b8")
 script = ExtResource("20_ux15e")
 
-[node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Easy"]
+[node name="DifficultyLabel" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Easy"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 7.0
@@ -911,18 +911,18 @@ label_settings = SubResource("LabelSettings_wmw1a")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Easy"]
+[node name="Label" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Easy"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 10.0
 offset_top = 58.0
 offset_right = 236.0
 offset_bottom = 115.0
-text = "面向萌新的难度水准，在这个难度下通关对于萌新来说也是值得骄傲的一件事了。"
+text = "A beginner-friendly difficulty level. Completing the game on this difficulty is an achievement for newcomers."
 label_settings = SubResource("LabelSettings_qtcyd")
 autowrap_mode = 1
 
-[node name="Normal" type="Panel" parent="MainMenu/LevelChose/HardChose/HardPanels"]
+[node name="Normal" type="Panel" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels"]
 material = SubResource("ShaderMaterial_axj0y")
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
@@ -930,7 +930,7 @@ focus_mode = 2
 theme_override_styles/panel = ExtResource("19_kr8b8")
 script = ExtResource("20_ux15e")
 
-[node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Normal"]
+[node name="DifficultyLabel" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Normal"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 7.0
@@ -942,18 +942,18 @@ label_settings = SubResource("LabelSettings_iovxw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Normal"]
+[node name="Label" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Normal"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 10.0
 offset_top = 58.0
 offset_right = 236.0
 offset_bottom = 115.0
-text = "正常的难度水准，你将面临正常的弹幕考验，小心不要被弹雨包围哦。"
+text = "A standard difficulty level. You will face normal bullet patterns, be careful not to get surrounded by bullets."
 label_settings = SubResource("LabelSettings_qtcyd")
 autowrap_mode = 1
 
-[node name="Hard" type="Panel" parent="MainMenu/LevelChose/HardChose/HardPanels"]
+[node name="Hard" type="Panel" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels"]
 material = SubResource("ShaderMaterial_5t5ys")
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
@@ -961,7 +961,7 @@ focus_mode = 2
 theme_override_styles/panel = ExtResource("19_kr8b8")
 script = ExtResource("20_ux15e")
 
-[node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Hard"]
+[node name="DifficultyLabel" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Hard"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 7.0
@@ -973,18 +973,18 @@ label_settings = SubResource("LabelSettings_b7rjf")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Hard"]
+[node name="Label" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Hard"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 10.0
 offset_top = 58.0
 offset_right = 236.0
 offset_bottom = 115.0
-text = "值得骄傲的难度，在这个难度下通关可以成为炫耀的资本了，但还请加油吧。"
+text = "A challenging difficulty level. Completing the game on this difficulty is a point of pride, but good luck."
 label_settings = SubResource("LabelSettings_qtcyd")
 autowrap_mode = 1
 
-[node name="Lunatic" type="Panel" parent="MainMenu/LevelChose/HardChose/HardPanels"]
+[node name="Lunatic" type="Panel" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels"]
 material = SubResource("ShaderMaterial_406pp")
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
@@ -996,7 +996,7 @@ focus_mode = 2
 theme_override_styles/panel = ExtResource("19_kr8b8")
 script = ExtResource("20_ux15e")
 
-[node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Lunatic"]
+[node name="DifficultyLabel" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Lunatic"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 7.0
@@ -1008,31 +1008,31 @@ label_settings = SubResource("LabelSettings_4t204")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Lunatic"]
+[node name="Label" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Lunatic"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 10.0
 offset_top = 58.0
 offset_right = 236.0
 offset_bottom = 115.0
-text = "真实的弹幕难度，尽情享受精彩且激烈的视觉盛宴吧！"
+text = "The true bullet hell difficulty. Enjoy the精彩且激烈的视觉盛宴吧！"
 label_settings = SubResource("LabelSettings_qtcyd")
 autowrap_mode = 1
 
-[node name="Extra" type="Panel" parent="MainMenu/LevelChose/HardChose/HardPanels"]
+[node name="Extra" type="Panel" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels"]
 visible = false
 material = SubResource("ShaderMaterial_4e33h")
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
-focus_neighbor_top = NodePath("../Phatom")
-focus_neighbor_bottom = NodePath("../Phatom")
-focus_next = NodePath("../Phatom")
-focus_previous = NodePath("../Phatom")
+focus_neighbor_top = NodePath("../Phantasm")
+focus_neighbor_bottom = NodePath("../Phantasm")
+focus_next = NodePath("../Phantasm")
+focus_previous = NodePath("../Phantasm")
 focus_mode = 2
 theme_override_styles/panel = ExtResource("19_kr8b8")
 script = ExtResource("20_ux15e")
 
-[node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Extra"]
+[node name="DifficultyLabel" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Extra"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 7.0
@@ -1044,18 +1044,18 @@ label_settings = SubResource("LabelSettings_wwbk8")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Extra"]
+[node name="Label" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Extra"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 10.0
 offset_top = 58.0
 offset_right = 236.0
 offset_bottom = 115.0
-text = "你疯了吗？确定要玩这个？"
+text = "Are you crazy? Are you sure you want to play this?"
 label_settings = SubResource("LabelSettings_qtcyd")
 autowrap_mode = 1
 
-[node name="Phatom" type="Panel" parent="MainMenu/LevelChose/HardChose/HardPanels"]
+[node name="Phantasm" type="Panel" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels"]
 visible = false
 material = SubResource("ShaderMaterial_yloco")
 custom_minimum_size = Vector2(0, 120)
@@ -1068,26 +1068,26 @@ focus_mode = 2
 theme_override_styles/panel = ExtResource("19_kr8b8")
 script = ExtResource("20_ux15e")
 
-[node name="难度" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Phatom"]
+[node name="DifficultyLabel" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Phantasm"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 7.0
 offset_top = -3.0
 offset_right = 105.0
 offset_bottom = 62.0
-text = "Phatom"
+text = "Phantasm"
 label_settings = SubResource("LabelSettings_pmvka")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="MainMenu/LevelChose/HardChose/HardPanels/Phatom"]
+[node name="Label" type="Label" parent="MainMenu/LevelSelect/DifficultySelect/DifficultyPanels/Phantasm"]
 use_parent_material = true
 layout_mode = 0
 offset_left = 10.0
 offset_top = 58.0
 offset_right = 236.0
 offset_bottom = 115.0
-text = "既然来了就别想走了。"
+text = "Once you're in, there's no way out."
 label_settings = SubResource("LabelSettings_qtcyd")
 autowrap_mode = 1
 
