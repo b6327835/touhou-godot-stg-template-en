@@ -11,9 +11,49 @@ func _ready():
 
 func _draw():
 	for polygon in updated_bullet_pic.keys():
-		draw_polygon(polygon[0],PackedColorArray(),polygon[1],updated_bullet_pic[polygon])
+		var vertices = polygon[0]
+		var uvs = polygon[1] 
+		var texture = updated_bullet_pic[polygon]
+		
+		if texture != null and vertices.size() >= 3:
+			# For AtlasTexture, we need to use the atlas texture, not the AtlasTexture itself
+			var atlas_texture = texture.atlas if texture.atlas != null else texture
+			
+			var colors = PackedColorArray()
+			colors.resize(vertices.size())
+			#colors.fill(Color.WHITE)
+			
+			draw_polygon(vertices, colors, uvs, atlas_texture)
+		else:
+			# Fallback: draw a simple colored polygon for debugging
+			if vertices.size() >= 3:
+				draw_colored_polygon(vertices, Color.RED)
+		
+		# Additional debug: draw outline for all player bullets
+		#if vertices.size() >= 3:
+			#var center = Vector2.ZERO
+			#for vertex in vertices:
+				#center += vertex
+			#center /= vertices.size()
+			#if center.y > STGSYS.view_portsize.y * 0.5:
+				#var outline_color = Color.CYAN
+				#for i in range(vertices.size()):
+					#var next_i = (i + 1) % vertices.size()
+					#draw_line(vertices[i], vertices[next_i], outline_color, 2.0)
 
 func get_bullet_polygon(bullet,texture:AtlasTexture):
+	if not texture in RS.bullet_polygons:
+		print("[ERROR] Texture not found in bullet_polygons for bullet type:", bullet.bullet_type)
+		# Create a fallback polygon
+		var size = texture.get_size()
+		var fallback_polygon = PackedVector2Array([
+			Vector2(0, 0), Vector2(size.x, 0), Vector2(size.x, size.y), Vector2(0, size.y)
+		])
+		var fallback_uv = PackedVector2Array([
+			Vector2(0, 0), Vector2(1, 0), Vector2(1, 1), Vector2(0, 1)
+		])
+		return [fallback_polygon, fallback_uv]
+	
 	var polygon = RS.bullet_polygons[texture]
 	#将定义好的多边形加上坐标得出解
 	var pos_offset = texture.get_size()/2
@@ -34,7 +74,9 @@ func get_bullet_polygon(bullet,texture:AtlasTexture):
 		polygon_pos += bullet.position
 		polygon_array.append(polygon_pos)
 		polygon_array = PackedVector2Array(polygon_array)
-	return [polygon_array,polygon[1]]
+	
+	# Use the corrected UV coordinates from RS.bullet_polygons[texture][1]
+	return [polygon_array, polygon[1]]
 
 func _process(delta):
 	if clear:
@@ -62,9 +104,48 @@ func clear_all_bullets():
 	clear = true
 
 func add_bullet_to_update(bullet):
+	# Check if the bullet type exists in our collection
+	if not bullet.bullet_type in RS.bullet_pics:
+		print("[ERROR] Bullet type", bullet.bullet_type, "not found in bullet_pics!")
+		return
+	
+	# Check if there are any frames for this bullet type
+	if RS.bullet_pics[bullet.bullet_type].size() == 0:
+		print("[ERROR] No frames found for bullet type", bullet.bullet_type)
+		return
+	
+	# Check if the color index is valid for this bullet type
+	if bullet.color >= RS.bullet_pics[bullet.bullet_type].size():
+		print("[WARNING] Color index", bullet.color, "is out of range for bullet type", 
+			bullet.bullet_type, ". Using color index 0 instead.")
+		bullet.color = 0 # Default to color index 0 if out of range
+	
 	var pic = RS.bullet_pics[bullet.bullet_type][bullet.color]
-	var polygon = get_bullet_polygon(bullet,pic)
+	if pic == null:
+		print("[ERROR] Picture is null for bullet type:", bullet.bullet_type, ", color:", bullet.color)
+		return
+		
+	var polygon = get_bullet_polygon(bullet, pic)
 	updated_bullet_pic[polygon] = pic
+	
+	# Debug for player bullets
+	#if bullet.b_owner == "self":
+		#print("[PLAYER BULLET DEBUG] Added to render queue")
+		#print("  - Type:", bullet.bullet_type, ", Color:", bullet.color) 
+		#print("  - Position:", bullet.position, ", Scale:", bullet.scale)
+		#print("  - Polygon vertices:", polygon[0].size(), ", Texture valid:", pic != null)
+		#print("  - Polygon points:", polygon[0])
+		#print("  - UV coordinates:", polygon[1])
+		#if pic != null:
+			#print("  - Texture size:", pic.get_size(), ", Atlas size:", pic.atlas.get_size() if pic.atlas else "No atlas")
+	
+	# Debug for bomb  
+	#if bullet.b_owner == "self_bomb":
+		#print("[BOMB BULLET DEBUG] Added to render queue")
+		#print("  - Type:", bullet.bullet_type, ", Color:", bullet.color) 
+		#print("  - Position:", bullet.position, ", Scale:", bullet.scale)
+		#print("  - Polygon vertices:", polygon[0].size(), ", Texture valid:", pic != null)
+		#print("  - Damage:", bullet.damage, ", Unbreakable:", bullet.unbreakable)
 
 func move_bullets(delta):
 	updated_bullet_pic = {}

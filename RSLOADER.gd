@@ -3,7 +3,8 @@ extends Node
 signal load_finish
 
 var bullet_sprite_frames = [
-	preload("res://DanmakuRelated/BulletStyleGroup.tres")
+	preload("res://DanmakuRelated/BulletStyleGroup.tres"),
+	preload("res://DanmakuRelated/CustomBullets.tres")
 ]
 
 var bullet_spawner = {
@@ -22,6 +23,7 @@ var bullet_collision_shapes = {
 	"StarBullet":preload("res://DanmakuRelated/BulletCollision/StarBullet.tres"),
 	"WingBullet":preload("res://DanmakuRelated/BulletCollision/WingBullet.tres"),
 	"WrenchBullet":preload("res://DanmakuRelated/BulletCollision/WrenchBullet.tres"),
+	"TestBullet":preload("res://DanmakuRelated/BulletCollision/TestBullet.tres")
 }
 
 var bullet_pics = {}
@@ -74,17 +76,18 @@ func get_bullet_polygon(texture:AtlasTexture):
 	texture_size,\
 	Vector2(0,texture_size.y)]
 	
-	var uv_num_x = texture_size.x/pic_size.x
-	var uv_num_y = texture_size.y/pic_size.y
-	
-	var offset_num_x = region.position.x/texture_size.x
-	var offset_num_y = region.position.y/texture_size.y
+	# Fix the UV calculation
+	# Calculate UV coordinates properly for atlas textures
+	var uv_min_x = region.position.x / pic_size.x
+	var uv_min_y = region.position.y / pic_size.y
+	var uv_max_x = (region.position.x + region.size.x) / pic_size.x
+	var uv_max_y = (region.position.y + region.size.y) / pic_size.y
 	
 	var uvs = PackedVector2Array([
-		Vector2(0 +uv_num_x*offset_num_x, 0 +uv_num_y*offset_num_y),\
-		Vector2(uv_num_x +uv_num_x*offset_num_x, 0 +uv_num_y*offset_num_y),
-		Vector2(uv_num_x +uv_num_x*offset_num_x, uv_num_y +uv_num_y*offset_num_y),\
-		Vector2(0 +uv_num_x*offset_num_x , uv_num_y +uv_num_y*offset_num_y)
+		Vector2(uv_min_x, uv_min_y),
+		Vector2(uv_max_x, uv_min_y),
+		Vector2(uv_max_x, uv_max_y),
+		Vector2(uv_min_x, uv_max_y)
 	])
 	
 	return([polygon_base,uvs])
