@@ -8,8 +8,12 @@ script = ExtResource("1")
 
 [node name="默认炸弹发弹点" parent="." instance=ExtResource("2")]
 out_screen_free = false
-spawn_bullet_type = "中玉"
+spawn_bullet_type = "SmallBullet"
 way_rotation = 180.0
+way_num = 16
+way_range = 360.0
+bullet_speed = 8.0
+spawn_bullet_frame = 5
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
