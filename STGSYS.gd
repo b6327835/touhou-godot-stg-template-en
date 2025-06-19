@@ -73,7 +73,15 @@ func frame_to_sec(frame):
 func _ready():
 	randomize()
 	connect("game_over",Callable(self,"_on_game_over"))
-	view_portsize = get_node("/root/TouhouDanmakuTemplate/GameWindow/SubViewportContainer/SubViewport").size
+	
+	# Try to get viewport size from the main game structure
+	var viewport_node = get_node_or_null("/root/TouhouDanmakuTemplate/GameWindow/SubViewportContainer/SubViewport")
+	if viewport_node:
+		view_portsize = viewport_node.size
+	else:
+		# Fallback for standalone scenes (like benchmark)
+		view_portsize = Vector2(640, 480)
+		print("Warning: Main viewport not found, using fallback size: ", view_portsize)
 
 func get_player(): #获取当前玩家
 	return player

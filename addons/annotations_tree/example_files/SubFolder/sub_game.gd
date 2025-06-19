@@ -8,7 +8,7 @@ extends Node
 var number_of_hands : int = 5
 
 #BUG: The functions print "Hello" to everyone
-func connect(username: String) -> void:
+func connect_user(username: String) -> void:
 	if username == "Marc":
 		print("Hello")
 		return

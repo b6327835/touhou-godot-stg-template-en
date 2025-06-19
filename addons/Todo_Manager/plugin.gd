@@ -44,8 +44,9 @@ func queue_remove(file: String):
 
 func find_tokens_from_path(scripts: Array) -> void:
 	for script_path in scripts:
-		var file := File.new()
-		file.open(script_path, File.READ)
+		var file := FileAccess.open(script_path, FileAccess.READ)
+		if file == null:
+			continue
 		var contents := file.get_as_text()
 		file.close()
 		find_tokens(contents, script_path)
@@ -162,17 +163,18 @@ func _on_filesystem_changed() -> void:
 func find_scripts() -> Array:
 	var scripts : Array
 	var directory_queue : Array
-	var dir : Directory = Directory.new()
+	var dir : DirAccess = DirAccess.open("res://")
 	### FIRST PHASE ###
-	if dir.open("res://") == OK:
+	if dir != null:
 		get_dir_contents(dir, scripts, directory_queue)
 	else:
 		printerr("TODO_Manager: There was an error during find_scripts() ### First Phase ###")
 	
 	### SECOND PHASE ###
 	while not directory_queue.is_empty():
-		if dir.change_dir(directory_queue[0]) == OK:
-			get_dir_contents(dir, scripts, directory_queue)
+		var new_dir = DirAccess.open(directory_queue[0])
+		if new_dir != null:
+			get_dir_contents(new_dir, scripts, directory_queue)
 		else:
 			printerr("TODO_Manager: There was an error at: " + directory_queue[0])
 		directory_queue.pop_front()
@@ -187,7 +189,7 @@ func cache_scripts(scripts: Array) -> void:
 			script_cache.append(script)
 
 
-func get_dir_contents(dir: Directory, scripts: Array, directory_queue: Array) -> void:
+func get_dir_contents(dir: DirAccess, scripts: Array, directory_queue: Array) -> void:
 	dir.include_navigational = false
 	dir.include_hidden = false
 	dir.list_dir_begin()

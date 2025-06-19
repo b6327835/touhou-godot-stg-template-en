@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="SpawnerSetting" load_steps=2 format=3 uid="uid://bxample123456"]
+
+[ext_resource type="Script" uid="uid://a9f744c08c6d6ccf711fdadbc123f18b" path="res://DanmakuRelated/BulletSpawnPointConfig.gd" id="1_example"]
+
+[resource]
+script = ExtResource("1_example")
+enable = true
+enable_shoot_bullet = true
+cycle = false
+start_sec = 0.1
+end_sec = 20.0
+never_end = false
+bullet_manager_type = 0
+move_start = false
+self_move_start_sec = 0.1
+out_screen_free = true
+speed = 0.0
+aspeed = 0.0
+speed_rotation = 0.0
+aspeed_rotation = 0.0
+bullet_life = 0
+bullet_speed = 5.0
+bullet_aspeed = 0.0
+bullet_aspeed_rotation = 0
+spawn_bullet_type = "SmallBullet"
+spawn_bullet_color = 2
+spawn_bullet_owner = "none"
+bullet_scale = Vector2(1, 1)
+bullet_moving_type = "linear"
+bullet_out_screen_remove = true
+way_num = 5
+way_range = 90.0
+way_rotation = 0.0
+spawner_radius = 0.0
+spawner_radius_rotation = 0.0
+spawn_bullet_frame = 10

@@ -42,3 +42,4 @@ addons/FileSystemView/views.cfg
 addons/FileSystemView/config.json
 test/
 benchmark/
+Examples/

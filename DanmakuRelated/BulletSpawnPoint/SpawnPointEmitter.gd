@@ -4,8 +4,39 @@ extends BulletSpawner
 @export var spawner_set: Resource
 @export var spawner_type = "BulletSpawner"
 
+# Essential properties for quick configuration
+@export_group("Quick Configuration")
+@export var enable_quick_config = false
+@export var quick_way_num := 1
+@export var quick_way_range := 360.0
+@export var quick_way_rotation := 0.0
+@export var quick_bullet_speed := 3.0
+@export var quick_spawn_frame := 2
+
 func _on_ready():
-	pass
+	# Apply resource settings if available
+	if spawner_set != null:
+		apply_spawner_settings()
+	# Apply quick config if enabled
+	elif enable_quick_config:
+		apply_quick_config()
+
+func apply_spawner_settings():
+	"""Apply settings from spawner_set Resource"""
+	var property_list = spawner_set.get_property_list()
+	for property in property_list:
+		var prop_name = property["name"]
+		if prop_name != "Resource" and prop_name != "resource_local_to_scene":
+			if has_method("set") and spawner_set.has_method("get"):
+				set(prop_name, spawner_set.get(prop_name))
+
+func apply_quick_config():
+	"""Apply quick configuration properties"""
+	way_num = quick_way_num
+	way_range = quick_way_range
+	way_rotation = quick_way_rotation
+	bullet_speed = quick_bullet_speed
+	spawn_bullet_frame = quick_spawn_frame
 
 func bullet_spawn_logic():
 	var bullets = get_bullet_group(way_num)
