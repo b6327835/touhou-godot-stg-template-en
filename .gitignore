@@ -41,3 +41,4 @@ export_release/
 addons/FileSystemView/views.cfg
 addons/FileSystemView/config.json
 test/
+benchmark/
