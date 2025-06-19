@@ -144,7 +144,9 @@ func _process(delta):
 		if all_bullets.is_empty():
 			self_free()
 	if enable and first_run:
-		bullet_spawn_logic()
+		# prevents unwanted initial shots from player spawners
+		if enable_shoot_bullet:
+			bullet_spawn_logic()
 		first_run = false
 	if enable and !start_timer_counted:
 		start_shoot_count()

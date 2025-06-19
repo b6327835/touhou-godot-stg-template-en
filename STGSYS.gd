@@ -31,6 +31,7 @@ var time_left = 60.0 :
 #生命与炸弹
 var life = 3
 var bomb = 3
+var bomb_running = false
 
 #历史得分和最大火力
 var max_score = 0
@@ -71,6 +72,9 @@ func frame_to_sec(frame):
 	return frame*fps_time
 
 func _ready():
+	# Set highest priority for input processing to ensure responsive bomb activation
+	set_process_priority(100)  # Higher numbers = higher priority
+	
 	randomize()
 	connect("game_over",Callable(self,"_on_game_over"))
 	
@@ -172,6 +176,20 @@ func increase_bomb():
 	bomb+=1
 	emit_signal("update_bomb")
 
+func _input(event):
+	# High-priority input handling for bomb
+	if Input.is_action_just_pressed("bomb"):
+		if bomb > 0 and not bomb_running:
+			bomb_running = true
+			# INSTANTLY make player invincible
+			if player != null:
+				player.unbreakable = true
+				# print("[STGSYS] invincibility activated for bomb")
+			emit_signal("use_bomb")
+			decrease_bomb()
+			# Consume the input to prevent double-processing
+			get_viewport().set_input_as_handled()
+
 func _unhandled_input(event):
 	#统一处理案按键操作
 	if Input.is_action_just_pressed("fire"):
@@ -182,10 +200,7 @@ func _unhandled_input(event):
 		lowSpeedMode = true
 	if Input.is_action_just_released("low_speed"):
 		lowSpeedMode = false
-	if Input.is_action_just_pressed("bomb"):
-		if bomb > 0:
-			emit_signal("use_bomb")
-			decrease_bomb()
+	# Bomb handling moved to _input() for responsiveness
 	if Input.is_action_just_pressed("special"):
 		pass
 	
@@ -194,6 +209,7 @@ func _unhandled_input(event):
 func _on_game_over():
 	#游戏结束操作
 	#player = null
+	bomb_running = false  # Reset bomb state on game over
 	if is_instance_valid(UI):
 		UI.visible = false
 

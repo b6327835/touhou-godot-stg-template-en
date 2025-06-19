@@ -16,6 +16,9 @@ var unbreakable_bomb_time = 1.0
 var bullet_group = "player_bullet"
 
 func _ready():
+	# Set high priority for responsive input processing
+	set_process_priority(99)  # Very high priority for player input
+	
 	$UnbreakableBombTimer.wait_time = unbreakable_bomb_time #设置炸弹无敌时间
 	$UnbreakableAnimTimer.wait_time = unbreakable_anim_time #设置动画无敌时间
 	STGSYS.set_player(self)
@@ -24,6 +27,16 @@ func _ready():
 	
 	for node in $Shooter.get_children():
 		node.add_bullet_group(bullet_group)
+	
+	#print("[PLAYER] Player ready - bomb system connected")
+
+func _input(event):
+	# IMMEDIATE invincibility activation
+	if Input.is_action_just_pressed("bomb") and not unbreakable:
+		if STGSYS.bomb > 0 and not STGSYS.bomb_running:
+
+			unbreakable = true
+			#print("[PLAYER] EMERGENCY invincibility activated")
 
 func _on_hit_by(obj):	#自机被击中时调用的方法
 	#obj代表击中自机的对象
@@ -43,6 +56,8 @@ func bomb_use():
 	unbreakable_bomb_time
 	$UnbreakableBombTimer.start()
 	$Bombs.get_node(bomb_name).run_bomb()
+	
+	#print("[PLAYER] Bomb activated - invincibility: ", unbreakable)
 
 func get_collision_shape():
 	return $CollectArea.shape
