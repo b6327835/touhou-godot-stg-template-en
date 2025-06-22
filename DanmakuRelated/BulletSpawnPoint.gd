@@ -41,6 +41,7 @@ var bullet_damage := 1.0 #子弹伤害，不可配置，根据技能自动计算
 @export var bullet_scale = Vector2(1,1)
 @export var bullet_moving_type = "linear"
 @export var bullet_out_screen_remove = true
+@export var bullet_unbreakable = false #子弹是否无敌，无敌子弹不会因为碰撞而消失
 @export var bullet_sin_amplitude = 0.0 #当bullet_moving_type=sinx时生效，sin的振幅，数值越大，振幅越大
 @export var bullet_sin_period = 0.0 #当bullet_moving_type=sinx时生效，sinx的周期公式B值(period=2pi/B)，数值越大，周期越短（快)
 @export var bullet_tags = {}
@@ -272,6 +273,7 @@ func get_bullet(bullet_name):
 		"collision_shape":RS.bullet_collision_shapes[spawn_bullet_type],
 		"scale":bullet_scale,
 		"rotating":rotate_bullet,
+		"unbreakable":bullet_unbreakable,
 
 		#运动参数
 		"speed_value":bullet_speed,

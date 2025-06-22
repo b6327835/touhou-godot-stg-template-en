@@ -29,6 +29,7 @@ spawn_bullet_owner = "self_bomb"
 bullet_scale = Vector2(1, 1)
 bullet_moving_type = "linear"
 bullet_out_screen_remove = true
+bullet_unbreakable = true
 way_num = 1
 way_range = 360.0
 way_rotation = 0.0

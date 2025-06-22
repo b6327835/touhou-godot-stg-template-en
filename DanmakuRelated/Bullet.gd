@@ -107,6 +107,10 @@ func _init(args := {}):
 	if args.has("rotating"):
 		rotating = args["rotating"]
 
+	#子弹是否无敌
+	if args.has("unbreakable"):
+		unbreakable = args["unbreakable"]
+
 	#子弹速度
 	if args.has("speed_value"):
 		speed_value = args["speed_value"]
