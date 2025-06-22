@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b5miubddjgdb0"]
+[gd_scene load_steps=5 format=3 uid="uid://cw53dmfhihvy5"]
 
 [ext_resource type="PackedScene" uid="uid://d3dhei3xytom4" path="res://DanmakuRelated/SpellCard/基础符卡.tscn" id="1_safqm"]
 [ext_resource type="PackedScene" uid="uid://xiy36hf3s4pl" path="res://DanmakuRelated/BulletSpawnPoint/EnemyEmitter.tscn" id="2_5yubr"]

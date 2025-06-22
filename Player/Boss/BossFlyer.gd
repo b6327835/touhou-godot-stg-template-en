@@ -23,7 +23,7 @@ var now_sub_round = 0 #当前子回合（回合内的第几个攻击模式）
 
 @onready var atk_rounds = [
 	[
-		{"hp": 2400,"is_spell_card":false,"card":$"符卡/方块一非","drop":[0,0],"score":100},
+		{"hp": 2400,"is_spell_card":false,"card":$"符卡/SquareNon1","drop":[0,0],"score":100},
 		{"hp": 3200, "is_spell_card": true, "card": $"符卡/方符：摇曳方阵","drop":[10,0],"score":200},
 	],
 	[

@@ -15,19 +15,20 @@ func _card_running_event():
 	var running_time = floor(get_card_run_time())
 	if running_time == 0:
 		if is_instance_valid(STGSYS.boss):
-			STGSYS.boss.move($\"SpellCardSpawnPoint#SquareNon1Emitter\".position,1)
+			STGSYS.boss.move($\"符卡发弹点/SquareNon1Emitter\".position,1)
 	if running_time == 1:
-		$\"SpellCardSpawnPoint#SquareNon1Emitter\".enable = true
+		$\"符卡发弹点/SquareNon1Emitter\".enable = true
 	if left_time == 90:
-		$\"SpellCardSpawnPoint#SquareNon1Emitter\".spawn_bullet_frame = 30
+		$\"符卡发弹点/SquareNon1Emitter\".spawn_bullet_frame = 30
 	if left_time == 60:
-		$\"SpellCardSpawnPoint/SquareNon1Emitter\".way_num = 6
+		$\"符卡发弹点/SquareNon1Emitter\".way_num = 6
 	if left_time == 30:
-		$\"SpellCardSpawnPoint/SquareNon1Emitter\".way_num = 10
+		$\"符卡发弹点/SquareNon1Emitter\".way_num = 10
 		
 
 func _after_card_run():
 	pass
+
 "
 
 [sub_resource type="GDScript" id="GDScript_v7vnh"]
@@ -82,7 +83,7 @@ func bullet_run_logic(bull,delta):
 script = SubResource("GDScript_o78hv")
 keep_sec = 120.0
 
-[node name="SpellCardSpawnPoint#SquareNon1Emitter" parent="." index="0" instance=ExtResource("2_5yubr")]
+[node name="SquareNon1Emitter" parent="符卡发弹点" index="0" instance=ExtResource("2_5yubr")]
 position = Vector2(252, 217)
 script = SubResource("GDScript_v7vnh")
 never_end = true
