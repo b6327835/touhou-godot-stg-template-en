@@ -72,8 +72,12 @@ func get_bullet_polygon(bullet, texture: AtlasTexture):
 
 func _process(delta):
 	if clear:
-		for bullet in bullets:
+		# Batch clear all bullets
+		var bullets_to_clear = bullets.duplicate()
+		for bullet in bullets_to_clear:
 			remove_bullet(bullet)
+		clear = false
+		return
 	move_bullets(delta)
 
 func create_bullet_bul(bullet):
@@ -112,6 +116,8 @@ func add_bullet_to_update(bullet):
 func move_bullets(delta):
 	updated_bullet_pic = {}
 	in_screen_bullet = 0
+	var bullets_to_remove = []
+	
 	for bullet in bullets:
 		bullet.move(delta)
 		add_bullet_to_update(bullet)
@@ -132,9 +138,12 @@ func move_bullets(delta):
 				bullet.life -= 1
 			else:
 				bullet.wait_for_remove = true
-	
-	# Remove marked bullets
-	for bullet in bullets:
+		
+		# Collect bullets to remove in batch
 		if bullet.wait_for_remove:
-			remove_bullet(bullet)
+			bullets_to_remove.append(bullet)
+	
+	# Remove marked bullets in batch to avoid modifying array during iteration
+	for bullet in bullets_to_remove:
+		remove_bullet(bullet)
 	queue_redraw()
