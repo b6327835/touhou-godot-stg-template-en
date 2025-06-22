@@ -14,4 +14,4 @@ func _ready():
 	#get_node("符卡/棱符：天棱地方").run_spell_card()
 	#get_node("符卡/方阵：完美立方体").run_spell_card()
 	#get_node("符卡/SquareNon1").run_spell_card()
-	#get_node("符卡/方块二非").run_spell_card()
+	#get_node("符卡/SquareNon2").run_spell_card()

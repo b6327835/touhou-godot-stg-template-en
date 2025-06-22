@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://d1bmakohvgygy" path="res://DanmakuRelated/SpellCard/方符：摇曳方阵.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://b5miubddjgdb0" path="res://DanmakuRelated/SpellCard/SquareNon1.tscn" id="3_hmxy1"]
 [ext_resource type="PackedScene" uid="uid://dlrgh5rcaxcqf" path="res://DanmakuRelated/SpellCard/方阵：完美立方体.tscn" id="4"]
-[ext_resource type="PackedScene" uid="uid://bfi1eeyo7tvgb" path="res://DanmakuRelated/SpellCard/方块二非.tscn" id="4_g3h5i"]
+[ext_resource type="PackedScene" uid="uid://bfi1eeyo7tvgb" path="res://DanmakuRelated/SpellCard/SquareNon2.tscn" id="4_g3h5i"]
 [ext_resource type="PackedScene" uid="uid://sw1vi562t4f3" path="res://DanmakuRelated/SpellCard/棱符：天棱地方.tscn" id="5"]
 
 [sub_resource type="Shader" id="2"]
@@ -66,7 +66,7 @@ shape = SubResource("1")
 
 [node name="SquareNon1" parent="符卡" instance=ExtResource("3_hmxy1")]
 
-[node name="方块二非" parent="符卡" instance=ExtResource("4_g3h5i")]
+[node name="SquareNon2" parent="符卡" instance=ExtResource("4_g3h5i")]
 
 [node name="方符：摇曳方阵" parent="符卡" instance=ExtResource("3")]
 

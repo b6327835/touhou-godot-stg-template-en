@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ph47big6y1eh" path="res://DanmakuRelated/BulletSpawnPoint/PlayerAimSpawnPoint.tscn" id="2_mqopy"]
 
 [sub_resource type="GDScript" id="GDScript_0y511"]
-resource_name = "方块二非"
+resource_name = "SquareNon2"
 script/source = "extends SpellCard
 
 func _before_card_run():
@@ -16,30 +16,30 @@ func _card_running_event():
 	if running_time == 0:
 		if is_instance_valid(STGSYS.boss):
 			STGSYS.boss.self_move = true
-			STGSYS.boss.move($\"符卡发弹点/棱造型发弹点\".position,1)
+			STGSYS.boss.move($\"符卡发弹点/PrismShapeSpawnPoint\".position,1)
 	if running_time == 1:
-		$\"符卡发弹点/棱造型发弹点\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点2\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点3\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点4\".enable = true
+		$\"符卡发弹点/PrismShapeSpawnPoint\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint2\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint3\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint4\".enable = true
 	if running_time == 41:
-		$\"符卡发弹点/棱造型发弹点3\".enable = true
+		$\"符卡发弹点/PrismShapeSpawnPoint3\".enable = true
 		
 	if running_time == 81:
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点5\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点6\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点7\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点8\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint5\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint6\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint7\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint8\".enable = true
 	if running_time == 121:
-		$\"符卡发弹点/棱造型发弹点2\".enable = true
-		$\"符卡发弹点/棱造型发弹点4\".enable = true
+		$\"符卡发弹点/PrismShapeSpawnPoint2\".enable = true
+		$\"符卡发弹点/PrismShapeSpawnPoint4\".enable = true
 	if left_time == 10:
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点9\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点10\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点11\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点12\".enable = true
-		$\"符卡发弹点/固定棱形发弹点/棱造型发弹点13\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint9\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint10\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint11\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint12\".enable = true
+		$\"符卡发弹点/FixedPrismSpawnPoint/PrismShapeSpawnPoint13\".enable = true
 	
 func _after_card_run():
 	pass
@@ -129,7 +129,7 @@ func bullet_run_logic(bull,delta):
 "
 
 [sub_resource type="GDScript" id="GDScript_dei3l"]
-resource_name = "固定棱形发弹点"
+resource_name = "FixedPrismSpawnPoint"
 script/source = "extends BulletSpawner
 
 #一个基础的发弹点，继承BulletSpawner
@@ -204,11 +204,11 @@ func bullet_run_logic(bull,delta):
 
 "
 
-[node name="方块二非" instance=ExtResource("1_glkca")]
+[node name="SquareNon2" instance=ExtResource("1_glkca")]
 script = SubResource("GDScript_0y511")
 keep_sec = 160.0
 
-[node name="棱造型发弹点" parent="符卡发弹点" index="0" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint" parent="符卡发弹点" index="0" instance=ExtResource("2_mqopy")]
 position = Vector2(180, 43)
 script = SubResource("GDScript_ch4wr")
 lock_aim_direction = true
@@ -221,7 +221,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
 
-[node name="棱造型发弹点2" parent="符卡发弹点" index="1" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint2" parent="符卡发弹点" index="1" instance=ExtResource("2_mqopy")]
 position = Vector2(60, 43)
 script = SubResource("GDScript_ch4wr")
 lock_aim_direction = true
@@ -234,7 +234,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
 
-[node name="棱造型发弹点3" parent="符卡发弹点" index="2" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint3" parent="符卡发弹点" index="2" instance=ExtResource("2_mqopy")]
 position = Vector2(300, 43)
 script = SubResource("GDScript_ch4wr")
 lock_aim_direction = true
@@ -247,7 +247,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
 
-[node name="棱造型发弹点4" parent="符卡发弹点" index="3" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint4" parent="符卡发弹点" index="3" instance=ExtResource("2_mqopy")]
 position = Vector2(420, 43)
 script = SubResource("GDScript_ch4wr")
 lock_aim_direction = true
@@ -260,9 +260,9 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 10
 
-[node name="固定棱形发弹点" type="Node" parent="符卡发弹点" index="4"]
+[node name="FixedPrismSpawnPoint" type="Node" parent="符卡发弹点" index="4"]
 
-[node name="棱造型发弹点" parent="符卡发弹点/固定棱形发弹点" index="0" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint" parent="符卡发弹点/FixedPrismSpawnPoint" index="0" instance=ExtResource("2_mqopy")]
 position = Vector2(46, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -273,7 +273,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点2" parent="符卡发弹点/固定棱形发弹点" index="1" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint2" parent="符卡发弹点/FixedPrismSpawnPoint" index="1" instance=ExtResource("2_mqopy")]
 position = Vector2(169, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -284,7 +284,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点3" parent="符卡发弹点/固定棱形发弹点" index="2" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint3" parent="符卡发弹点/FixedPrismSpawnPoint" index="2" instance=ExtResource("2_mqopy")]
 position = Vector2(330, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -295,7 +295,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点4" parent="符卡发弹点/固定棱形发弹点" index="3" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint4" parent="符卡发弹点/FixedPrismSpawnPoint" index="3" instance=ExtResource("2_mqopy")]
 position = Vector2(428, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -306,7 +306,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点5" parent="符卡发弹点/固定棱形发弹点" index="4" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint5" parent="符卡发弹点/FixedPrismSpawnPoint" index="4" instance=ExtResource("2_mqopy")]
 position = Vector2(101, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -317,7 +317,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点6" parent="符卡发弹点/固定棱形发弹点" index="5" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint6" parent="符卡发弹点/FixedPrismSpawnPoint" index="5" instance=ExtResource("2_mqopy")]
 position = Vector2(251, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -328,7 +328,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点7" parent="符卡发弹点/固定棱形发弹点" index="6" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint7" parent="符卡发弹点/FixedPrismSpawnPoint" index="6" instance=ExtResource("2_mqopy")]
 position = Vector2(384, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -339,7 +339,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点8" parent="符卡发弹点/固定棱形发弹点" index="7" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint8" parent="符卡发弹点/FixedPrismSpawnPoint" index="7" instance=ExtResource("2_mqopy")]
 position = Vector2(470, 43)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -350,7 +350,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点9" parent="符卡发弹点/固定棱形发弹点" index="8" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint9" parent="符卡发弹点/FixedPrismSpawnPoint" index="8" instance=ExtResource("2_mqopy")]
 position = Vector2(16, 42)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -361,7 +361,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点10" parent="符卡发弹点/固定棱形发弹点" index="9" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint10" parent="符卡发弹点/FixedPrismSpawnPoint" index="9" instance=ExtResource("2_mqopy")]
 position = Vector2(74, 42)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -372,7 +372,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点11" parent="符卡发弹点/固定棱形发弹点" index="10" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint11" parent="符卡发弹点/FixedPrismSpawnPoint" index="10" instance=ExtResource("2_mqopy")]
 position = Vector2(133, 42)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -383,7 +383,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点12" parent="符卡发弹点/固定棱形发弹点" index="11" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint12" parent="符卡发弹点/FixedPrismSpawnPoint" index="11" instance=ExtResource("2_mqopy")]
 position = Vector2(293, 42)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
@@ -394,7 +394,7 @@ way_num = 2
 way_range = 40.0
 spawn_bullet_frame = 20
 
-[node name="棱造型发弹点13" parent="符卡发弹点/固定棱形发弹点" index="12" instance=ExtResource("2_mqopy")]
+[node name="PrismShapeSpawnPoint13" parent="符卡发弹点/FixedPrismSpawnPoint" index="12" instance=ExtResource("2_mqopy")]
 position = Vector2(206, 44)
 script = SubResource("GDScript_dei3l")
 start_sec = 0.01
