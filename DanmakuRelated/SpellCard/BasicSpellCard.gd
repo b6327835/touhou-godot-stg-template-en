@@ -28,21 +28,21 @@ signal spell_finish(spell)
 
 func _enter_tree():
 	if !Engine.is_editor_hint():
-		get_node("测试背景").free()
+		get_node("TestBackground").free()
 
 func _ready():
 	$Timer.wait_time = keep_sec
-	for spawner in get_node("符卡发弹点").get_children():
+	for spawner in get_node("SpawnPoint").get_children():
 		if spawner is Marker2D:
 			spawners.append(spawner)
 		else:
 			spawners.append_array(spawner.get_children())
-	for shade in get_node("符卡遮罩").get_children():
+	for shade in get_node("SpellCardMask").get_children():
 		if shade is Area2D:
 			shades.append(shade)
 		else:
 			shades.append_array(shade.get_children())
-	for reflect in get_node("符卡反射板").get_children():
+	for reflect in get_node("SpellCardReflector").get_children():
 		if reflect is Area2D:
 			reflectors.append(reflect)
 		else:
@@ -50,11 +50,11 @@ func _ready():
 
 func add_spawner(spawner,node_name=null):
 	if node_name == null:
-		$"符卡发弹点".add_child(spawner)
+		$"SpawnPoint".add_child(spawner)
 		spawners.append(spawner)
 	else:
 		pass
-		#$"符卡发弹点".get_node(node_name).add_child(spawner)
+		#$"SpawnPoint".get_node(node_name).add_child(spawner)
 
 func _process(delta):
 	if running:

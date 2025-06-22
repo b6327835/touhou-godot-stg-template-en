@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b7n3txpgq25er"]
 
-[ext_resource type="PackedScene" uid="uid://d3dhei3xytom4" path="res://DanmakuRelated/SpellCard/基础符卡.tscn" id="1_safqm"]
+[ext_resource type="PackedScene" uid="uid://d3dhei3xytom4" path="res://DanmakuRelated/SpellCard/BasicSpellCard.tscn" id="1_safqm"]
 [ext_resource type="PackedScene" uid="uid://xiy36hf3s4pl" path="res://DanmakuRelated/BulletSpawnPoint/EnemyEmitter.tscn" id="2_5yubr"]
 
 [sub_resource type="GDScript" id="GDScript_o78hv"]
@@ -15,15 +15,15 @@ func _card_running_event():
 	var running_time = floor(get_card_run_time())
 	if running_time == 0:
 		if is_instance_valid(STGSYS.boss):
-			STGSYS.boss.move($\"符卡发弹点/SquareNon1Emitter\".position,1)
+			STGSYS.boss.move($\"SpawnPoint/SquareNon1Emitter\".position,1)
 	if running_time == 1:
-		$\"符卡发弹点/SquareNon1Emitter\".enable = true
+		$\"SpawnPoint/SquareNon1Emitter\".enable = true
 	if left_time == 90:
-		$\"符卡发弹点/SquareNon1Emitter\".spawn_bullet_frame = 30
+		$\"SpawnPoint/SquareNon1Emitter\".spawn_bullet_frame = 30
 	if left_time == 60:
-		$\"符卡发弹点/SquareNon1Emitter\".way_num = 6
+		$\"SpawnPoint/SquareNon1Emitter\".way_num = 6
 	if left_time == 30:
-		$\"符卡发弹点/SquareNon1Emitter\".way_num = 10
+		$\"SpawnPoint/SquareNon1Emitter\".way_num = 10
 		
 
 func _after_card_run():
@@ -83,7 +83,7 @@ func bullet_run_logic(bull,delta):
 script = SubResource("GDScript_o78hv")
 keep_sec = 120.0
 
-[node name="SquareNon1Emitter" parent="符卡发弹点" index="0" instance=ExtResource("2_5yubr")]
+[node name="SquareNon1Emitter" parent="SpawnPoint" index="0" instance=ExtResource("2_5yubr")]
 position = Vector2(252, 217)
 script = SubResource("GDScript_v7vnh")
 never_end = true

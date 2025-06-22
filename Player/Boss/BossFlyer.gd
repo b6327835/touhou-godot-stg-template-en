@@ -23,13 +23,13 @@ var now_sub_round = 0 #当前子回合（回合内的第几个攻击模式）
 
 @onready var atk_rounds = [
 	[
-		{"hp": 2400,"is_spell_card":false,"card":$"符卡/SquareNon1","drop":[0,0],"score":100},
-		{"hp": 3200, "is_spell_card": true, "card": $"符卡/方符：摇曳方阵","drop":[10,0],"score":200},
+		{"hp": 2400,"is_spell_card":false,"card":$"SpellCard/SquareNon1","drop":[0,0],"score":100},
+		{"hp": 3200, "is_spell_card": true, "card": $"SpellCard/Square：WavingFormation","drop":[10,0],"score":200},
 	],
 	[
-		{"hp": 2000,"is_spell_card":false,"card":$"符卡/SquareNon2","drop":[0,0],"score":200},
-		{"hp": 4000, "is_spell_card": true, "card": $"符卡/棱符：天棱地方","drop":[20,0],"score":400},
-		{"hp": 4800, "is_spell_card": true, "card": $"符卡/方阵：完美立方体","drop":[0,0],"score":500},
+		{"hp": 2000,"is_spell_card":false,"card":$"SpellCard/SquareNon2","drop":[0,0],"score":200},
+		{"hp": 4000, "is_spell_card": true, "card": $"SpellCard/Prism：HeavenEarthPrism","drop":[20,0],"score":400},
+		{"hp": 4800, "is_spell_card": true, "card": $"SpellCard/方阵：完美立方体","drop":[0,0],"score":500},
 	],
 ] #回合和子回合
 
