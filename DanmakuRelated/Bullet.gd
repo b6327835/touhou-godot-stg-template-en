@@ -107,6 +107,10 @@ func _init(args := {}):
 	if args.has("rotating"):
 		rotating = args["rotating"]
 
+	#子弹是否无敌
+	if args.has("unbreakable"):
+		unbreakable = args["unbreakable"]
+
 	#子弹速度
 	if args.has("speed_value"):
 		speed_value = args["speed_value"]
@@ -246,11 +250,19 @@ func collision_detect():
 						shade.run_shade_bullet_event(self)
 		"self_bomb":
 			#自机炸弹
+			# Quick distance check first to avoid expensive collision detection
+			var bomb_radius = 50.0 * scale.x  # Approximate bomb radius
 			for enemy_bull in STGSYS.enemy_bullets:
-				#在此处写自机炸弹撞到敌机子弹的结果
-				if detect_collsion_with(bul_trans,enemy_bull):
-					if !unbreakable:
-						enemy_bull.wait_for_remove = true
+				# Skip if already marked for removal
+				if enemy_bull.wait_for_remove:
+					continue
+				# Quick distance check before expensive collision detection
+				var distance = position.distance_to(enemy_bull.position)
+				if distance < bomb_radius + 20.0:  # Add some buffer
+					#在此处写自机炸弹撞到敌机子弹的结果
+					if detect_collsion_with(bul_trans,enemy_bull):
+						if !enemy_bull.unbreakable:
+							enemy_bull.wait_for_remove = true
 			
 			for reflect in STGSYS.reflectors:
 				if reflect.enable:
