@@ -51,14 +51,17 @@ color = Color(0, 0, 0, 1)
 offset_top = -648.0
 offset_right = 480.0
 
+[node name="PlayerBulletLayer" parent="." instance=ExtResource("2")]
+z_index = -1
+
 [node name="NormalDanmakuLayer" parent="." instance=ExtResource("2")]
 
 [node name="HighlightDanmakuLayer" parent="." instance=ExtResource("2")]
 material = SubResource("1")
 z_index = 3
 
-[node name="PlayerBulletLayer" parent="." instance=ExtResource("2")]
-z_index = -1
+[node name="BombBulletLayer" parent="." instance=ExtResource("2")]
+z_index = 4
 
 [node name="ItemManager" parent="." instance=ExtResource("9_6w5xb")]
 z_index = 11

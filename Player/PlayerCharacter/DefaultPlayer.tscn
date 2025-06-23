@@ -37,6 +37,10 @@ _data = {
 }
 
 [node name="DefaultPlayer" type="CharacterBody2D" groups=["self_area"]]
+motion_mode = 1
+wall_min_slide_angle = 0.0
+platform_on_leave = 2
+platform_floor_layers = 0
 script = ExtResource("2")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -81,8 +85,10 @@ position = Vector2(-11, -16)
 position = Vector2(11, 16)
 
 [node name="Shooter" type="Node2D" parent="."]
+z_index = -50
 
 [node name="PlayerBulletSpawner" parent="Shooter" instance=ExtResource("3")]
+z_index = -50
 position = Vector2(-10, -17)
 enable = true
 enable_shoot_bullet = false
@@ -93,6 +99,7 @@ out_screen_free = false
 bullet_speed = 15.0
 
 [node name="PlayerBulletSpawner2" parent="Shooter" instance=ExtResource("3")]
+z_index = -50
 position = Vector2(0, -17)
 enable = true
 enable_shoot_bullet = false
@@ -103,6 +110,7 @@ out_screen_free = false
 bullet_speed = 15.0
 
 [node name="PlayerBulletSpawner3" parent="Shooter" instance=ExtResource("3")]
+z_index = -50
 position = Vector2(10, -17)
 enable = true
 enable_shoot_bullet = false

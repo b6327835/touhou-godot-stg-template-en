@@ -2,7 +2,7 @@ class_name BulletSpawnerBomb
 extends BulletSpawner
 
 func _on_ready():
-	bullet_manager_name = "PlayerBulletLayer"
+	bullet_manager_name = "BombBulletLayer"
 
 # Override the remove_spawner method to prevent bomb spawners from being auto-removed
 func remove_spawner():
