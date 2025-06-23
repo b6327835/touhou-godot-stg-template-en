@@ -2,9 +2,9 @@ extends BulletSpawner
 
 func _on_ready():
 	bullet_manager_name = "PlayerBulletLayer"
-	spawn_bullet_type = "MediumBullet"
+	spawn_bullet_type = "StarBullet"
 	spawn_bullet_owner = "self"
-	spawn_bullet_color = 0
+	spawn_bullet_color = 9
 	way_rotation = -180
 	
 	bullet_scale = Vector2(1.0, 1.0)
